@@ -26,7 +26,7 @@
        }
       return 0;
     }
-**2). Dhoni the Man with Midas Touch**
+**2).Dhoni the Man with Midas Touch**
 
     #include <stdio.h>
     
