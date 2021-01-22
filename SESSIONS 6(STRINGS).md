@@ -294,7 +294,7 @@
         return 0;
     
     }
- **Q. 54: Deletion of sub string- V**
+ **6). Deletion of sub string- V**
 
     #include <stdio.h>
     #include<string.h>
