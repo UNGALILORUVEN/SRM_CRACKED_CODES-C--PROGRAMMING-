@@ -1,4 +1,4 @@
-  **Q. 11: Mirror Problem**
+  **11). Mirror Problem**
    
 
     #include <stdio.h>
@@ -16,7 +16,7 @@
         return 0;
     }
 
-**Q. 12: Series of Series**
+**12). Series of Series**
 
     #include <stdio.h>
     int main() {
@@ -30,7 +30,7 @@
         }
         return 0;
     }
-**Q. 13: Value Insertion**
+**13). Value Insertion**
 
     #include <stdio.h>
     int main()
@@ -48,7 +48,7 @@
          printf("%d\n",array[c]);
       return 0;
     }
-**Q. 14: Armstrong Digits**
+**14). Armstrong Digits**
 
     #include <stdio.h>
     int main() {
@@ -73,7 +73,7 @@
     	return 0;
     }
 
-**Q. 15: State Election**
+**15). State Election**
 
     #include <stdio.h>
     int main() 
@@ -91,7 +91,7 @@
        } 
     	return 0;
     }
-**Q. 16: Power of 2**
+**16). Power of 2**
 
     #include<stdio.h>
     #include<math.h>
@@ -111,7 +111,7 @@
         return 0;
     
     }
-**Q. 17: Switch Integer**
+**17). Switch Integer**
 
     #include<stdio.h>
     int main()
@@ -133,7 +133,7 @@
       }
       return 0;
     }
-**Q. 18: Occurrences of Characters**
+**18). Occurrences of Characters**
 
     #include<stdio.h>
     #include<string.h>
@@ -162,7 +162,7 @@
       return 0;
     }
 
-**Q. 19: Grading System**
+**19). Grading System**
 
     #include <stdio.h>
     int main() {
@@ -188,7 +188,7 @@
       }
     	return 0;
     }
-**Q. 20: Star Formation**
+**20). Star Formation**
 
     #include <stdio.h>
     int main() {
