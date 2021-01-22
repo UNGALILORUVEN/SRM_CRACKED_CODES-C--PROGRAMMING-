@@ -294,3 +294,34 @@
         return 0;
     
     }
+ **Q. 54: Deletion of sub string- V**
+
+    #include <stdio.h>
+    #include<string.h>
+    int main() {
+    	//code
+    	int n,i,j,k,l,m,l1,l2,f;
+    	char str1[10000],str2[100000];
+    	scanf("%d",&n);
+    	while(n>0){
+    	    n--;
+    	    scanf("%s",str1);
+    	    scanf("%s",str2);
+    	    l1=strlen(str1);
+    	    l2=strlen(str2);
+    	    for(i=0;i<l1;i++){
+    	        f=0;
+    	        for(j=0;j<l2;j++){
+    	            if(str1[i]==str2[j]){
+    	                f=1;
+    	            }
+    	        }
+    	        if(f==0){
+    	            printf("%c",str1[i]);
+    	        }
+    	    }
+    	    printf("\n");
+    	    
+    	}
+    	return 0;
+    }
