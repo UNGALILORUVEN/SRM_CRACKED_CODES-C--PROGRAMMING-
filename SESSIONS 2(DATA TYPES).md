@@ -295,10 +295,12 @@
  **16). Sum of Two Large Numbers**
  
         #include <stdio.h>
-        int main() {
+        int main()
+        {
         int n,x,y,i,t,j;
         scanf("%d",&n);
-        for(i=0;i<n;i++){
+        for(i=0;i<n;i++)
+        {
         scanf("%d %d",&x,&y);
         t=x+y;
         int c1=0,c2=0,x1;
@@ -324,6 +326,6 @@
       }
     }
  	return 0;
-  }
+    }
   
  TO BE CONTINUED....
