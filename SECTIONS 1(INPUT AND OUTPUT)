@@ -111,3 +111,33 @@ int main()  {
       printf("%d\n", ang3);
       return 0;
  } 
+**11). calculate type of triangle----------------
+
+#include<stdio.h> 
+#include<math.h> 
+int main(void)
+{   
+    float a, b, c, s, area;
+    scanf("%f", &a);
+    scanf("%f", &b);
+    scanf("%f", &c);
+ 
+     
+    if( (a + b > c) && (b + c > a) && (c + a > b) )
+    {
+        if( (a == b) && (b == c) )
+        {
+            printf("Triangle is equilateral.\n");
+        }
+        else if( (a == b) || (b == c) || (a == c) )
+        {
+            printf("Triangle is isosceles ");
+        }
+        else
+        {
+            printf("Triangle is scalene");
+        }
+
+}
+    return 0; 
+}
