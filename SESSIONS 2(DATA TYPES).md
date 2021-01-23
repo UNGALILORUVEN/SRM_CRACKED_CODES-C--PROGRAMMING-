@@ -220,6 +220,110 @@
        } 
     	return 0;
     }
+ **12). Four Square**
  
+     #include <stdio.h>
+     #include <math.h>
+     int main()
+     {
+      int lines;
+      scanf("%d\n",&lines);
+      while (lines != 0) {
+      int num, result;
+      scanf("%d", &num);
+      result = floor(sqrt(num));
+      printf("%d\n",(int) result);
+      lines -= 1;}
+      return 0;
+      }
+  **13). Print NCR**
+  
+      #include <stdio.h>
+      int fact(int z);
+      int main()
+      {
+       int n, r, ncr;
+       scanf("%d%d", &n, &r);
+       ncr = fact(n) / (fact(r) * fact(n - r));
+       printf("%d", ncr);
+       return 0;
+       }
+  **14). Magical game of sum**
+        
+       #include<stdio.h>
+       int main()
+       {
+        int l,t,n;
+        scanf("%d",&l);
+        while (l != 0)
+      {
+       scanf("%d %d",&t,&n);
+       while (t != 0 )
+       {
+          n=n*(n+1)/2;
+          t-=1;
+       }
+       printf("%d\n",n);
+       l-=1;
+      }
+      return 0;
+     }
+ **15). Happy Addition**
 
+       #include <stdio.h>
+       int main() 
+       {
+       int j,i,k,c;
+       scanf("%d",&k);
+       int a[k];
+       for (i=0;i<k;i++)
+       {
+         scanf("%d",&a[i]);
+       }
+       scanf("%d %d",&c,&j);
+       for (i=k-1;i>=j-1;i--)
+       {
+         a[i+1]= a[i];
+       }
+       a[j-1]=c;
+       for(i=0;i<=k;i++)
+       {
+         printf(" %d",a[i]);
+        }
+      return 0;
+      }
+ **16). Sum of Two Large Numbers**
+ 
+        #include <stdio.h>
+        int main() {
+        int n,x,y,i,t,j;
+        scanf("%d",&n);
+        for(i=0;i<n;i++){
+        scanf("%d %d",&x,&y);
+        t=x+y;
+        int c1=0,c2=0,x1;
+        while(t!=0)
+        {
+          c1++;
+          t/=10;
+        }
+       x1=x;
+       t=x+y;
+       while(x1!=0)
+       {
+        c2++;
+        x1/=10;
+       }
+       if(c1==c2)
+       {
+       printf("%d\n",t);
+       } 
+      else 
+      {
+        printf("%d\n",x);
+      }
+    }
+ 	return 0;
+  }
+  
  TO BE CONTINUED....
