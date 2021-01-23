@@ -195,7 +195,7 @@
  	printf("%d",perimeter);
  	return 0;
 	}
-**17).Quotient and Remainder**
+**17). Quotient and reminder**
 	
 	#include <math.h>
 	#include <stdio.h>
@@ -208,5 +208,14 @@
   	printf("quotient: %d",quotient);
   	printf(", remainder: %d",remainder);
 	return 0;
+	}
+**18). ASCII**
+
+	#include <stdio.h>
+	int main() {  
+   	char c;
+    	scanf("%c", &c);  
+    	printf("%d.", c);
+    	return 0;
 	}
 TO BE CONTINUED.......
