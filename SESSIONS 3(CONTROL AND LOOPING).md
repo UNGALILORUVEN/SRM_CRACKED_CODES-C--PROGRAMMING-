@@ -291,3 +291,81 @@
     	}
     	return 0;
     }
+**11). Numerical Games**
+         
+         #include <stdio.h>
+         int main()
+         {
+         int num;
+         scanf("%d",&num);
+         if(num % 2 == 0)
+            printf("no");
+         else
+            printf("yes");
+         return 0;
+         }
+   **12). Surprise Test After Lockdown**
+         
+         #include <stdio.h>
+         int main()
+         {
+         int phy, chem, bio, math, comp; 
+         float per; 
+         scanf("%d%d%d%d%d", &phy, &chem, &bio, &math, &comp);
+        per = (phy + chem + bio + math + comp) / 5.0;
+        printf("Percentage = %.2f\n", per);
+        if(per >= 90)
+        {
+            printf("Grade A");
+        }
+        else if(per >= 80)
+        {
+            printf("Grade B");
+        }
+        else if(per >= 70)
+        {
+            printf("Grade C");
+        }
+        else if(per >= 60)
+        {
+        printf("Grade D");
+        }
+        else if(per >= 40)
+        {
+        printf("Grade E");
+        }
+        else
+        {
+            printf("Grade F");
+        }
+        return 0;
+        }
+  **13). KL Rahul and his Teammates**
+  
+        #include <stdio.h>
+        #define BASE 10
+        int main()
+    {
+        long long num, n;
+        int i, lastDigit;
+        int freq[BASE];
+        scanf("%lld", &num);
+        for(i=0; i<BASE; i++)
+        {
+            freq[i] = 0;
+        }
+        n = num; 
+        while(n != 0)
+        {
+            lastDigit = n % 10;
+            n /= 10;
+            freq[lastDigit]++;
+        }
+        for(i=0; i<BASE; i++)
+        {
+            printf("%d = %d\n", i, freq[i]);
+        }
+    return 0;
+    }
+      
+TO  BE CONTINUED.....
