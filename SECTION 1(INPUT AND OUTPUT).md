@@ -116,5 +116,97 @@
       	printf("%d\n", ang3);
       	return 0;
  	}
+**11).Theatre Square**
+
+	#include<math.h>
+	#include <stdio.h>
+	int main()
+	{
+  	float m,n,o;
+  	int p,q,r;
+  	scanf("%f %f %f",&m,&n,&o);
+  	p= ceil(m/o);
+  	q= ceil(n/o);
+  	r=p*q;
+  	printf("%d",r);
+	return 0;
+	}
+ **12).Pow**
+ 
+ 	#include <stdio.h>
+	#include <math.h>
+	int main() {
+	int a,b,c;
+	scanf("%d%d",&a,&b);
+  	c=pow(a,b);
+  	printf("%d",a);
+  	printf(" to the power of ");
+  	printf("%d",b);
+  	printf(" is= %d",c);
+	return 0;
+	}
+**13).Addition, Subtraction, multiplication, Division**
 	
+	#include <stdio.h>
+	int main() {
+  	int add,sub,mul,p,q,mod=0;
+  	float div;
+  	scanf("%d,%d",&p,&q);
+  	add=p+q;
+  	sub=p-q;
+  	mul=p * q;
+  	div=p/q;
+  	mod=p%q;
+  	printf("\nAddition : %d",add);
+  	printf("\nSubtraction : %d",sub);
+  	printf("\nMultiplication : %d",mul);
+  	printf("\nDivision : %f",div);
+  	printf("\nMODULUS = %d",mod);
+  	return 0;
+	}
+**14).Float and Double**
+
+	#include <stdio.h>
+	int main() {
+    	float b;
+  	double a;
+	scanf("%lf%f",&a,&b);
+    		printf("%lf\n%f",a,b);
+	return 0;
+	}
+**15).Sum of Three numbers**
+	
+	#include <stdio.h>
+	int main() {int a,b,c,t;
+	scanf("%d,%d,%d",&a,&b,&c);
+     	t=a+b+c;
+         printf("%d",t);
+	return 0;
+	}
+**16).Rectangular**
+
+	#include<stdio.h>
+	int main()
+	{
+  	int height,width,perimeter,sub;
+ 	scanf("%d%d",&height,&width);
+	 sub=height+width;
+ 	perimeter=sub * 2;
+ 	printf("%d",perimeter);
+ 	return 0;
+	}
+**17).Quotient and Remainder**
+	
+	#include <math.h>
+	#include <stdio.h>
+	int main() {
+  	int divider,divisor,quotient,remainder;
+  	scanf("%d",&divider);
+  	scanf("%d",&divisor);
+  	quotient=divider/divisor;
+  	remainder=divider%divisor;
+  	printf("quotient: %d",quotient);
+  	printf(", remainder: %d",remainder);
+	return 0;
+	}
 TO BE CONTINUED.......
