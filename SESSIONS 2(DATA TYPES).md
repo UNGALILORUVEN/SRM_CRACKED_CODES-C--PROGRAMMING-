@@ -246,10 +246,11 @@
       }
     	return 0;
     }
- **giant element**
- #include <stdio.h>
-int main()
-{
+ **13). Giant element**
+ 
+  #include <stdio.h>
+  int main()
+  {
   int a[100],i,j,n,t;
   scanf("%d",&n);
   for(i=0;i<n;i++)
@@ -266,10 +267,10 @@ int main()
         a[i]=a[j];
         a[j]=t;
       }
-    }
+     }
+   }
+   printf("%d",a[i-1]);
+  return 0;
   }
-  printf("%d",a[i-1]);
- return 0;
-}
 
  TO BE CONTINUED....
