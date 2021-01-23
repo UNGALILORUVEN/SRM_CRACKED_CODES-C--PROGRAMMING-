@@ -220,31 +220,6 @@
        } 
     	return 0;
     }
- **12). Grading System**
-
-    #include <stdio.h>
-    int main() {
-    	int t;
-      scanf("%d",&t);
-      while (t--)
-      {
-        int a,b;
-        float c;
-        scanf("%d %f %d",&a,&c,&b);
-        if (a>50&& c<0.7 && b>5600)
-          printf("10\n");
-        else if (a>50&& c<0.7)
-          printf("9\n");
-       else  if (c<0.7 && b>5600)
-          printf("8\n");
-       else  if (a>50 && b>5600)
-          printf("7\n");
-        else if (a>50|| c<0.7 || b>5600)
-          printf("6\n");
-        else 
-          printf("5\n");
-      }
-    	return 0;
-    }
+ 
 
  TO BE CONTINUED....
