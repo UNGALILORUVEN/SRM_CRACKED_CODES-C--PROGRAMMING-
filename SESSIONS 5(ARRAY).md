@@ -290,7 +290,7 @@
     
         return 0;
     }
- **19). Maxwell and his cousin
+ **19). Maxwell and his cousin**
  
            #include<stdio.h>
         int main()
@@ -315,7 +315,7 @@
         }
         return 0;
         }
-  **20). Mahi and raina
+  **20). Mahi and raina**
   
         #include <stdio.h>
         int main() 
