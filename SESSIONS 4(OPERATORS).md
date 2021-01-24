@@ -55,3 +55,34 @@
         }
         return 0;
         }
+ **4). Remainder**
+ 
+            #include <stdio.h>
+            int main() 
+            {
+            int a,b, quotient, remainder;
+            scanf("%d",&a);
+            scanf("%d",&b);
+            quotient=(int) (a/b);
+            remainder=a%b;
+            printf("%d\n", quotient);
+            printf("%d\n", remainder);
+            return 0;
+            }
+  **5). Display
+  
+            #include<stdio.h>
+            #include<math.h>
+            int main()
+            {
+                   int n,i;
+                  scanf("%d",&n);
+                  for (i=(int)sqrt(n);i>=1;-1)
+                   if(n%i==0)
+                   {
+                         printf("%d %d", i,n/i);
+                         break;
+                   }
+             return 0;
+             }
+             
