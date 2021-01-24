@@ -327,5 +327,21 @@
     }
  	return 0;
     }
+**17). Rate of Interest**
+
+      #include <stdio.h>
+      int main()
+      {
+      int p,t;
+      float r, si;
+      scanf("%d",&p);
+      scanf("%d",&t);
+      scanf("%f", &r);
+      si=(p*t*r)/100;
+      printf("%.2f",si);
+      return 0;
+      }
+
+
   
  TO BE CONTINUED....
