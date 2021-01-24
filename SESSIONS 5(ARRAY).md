@@ -258,7 +258,8 @@
                     break;
                 }
             }
-            if (i == 27) {
+            if (i == 27) 
+            {
                 printf("YES\n");
             }
         }
@@ -290,48 +291,4 @@
     
         return 0;
     }
- **19). Maxwell and his cousin**
- 
-           #include<stdio.h>
-        int main()
-        {
-         int i, j, rows, columns;
-         scanf("%d", &rows);
-         scanf("%d", &columns);
-         for (i = 1; i <= rows; i++)
-         {
-             for(j = 1; j<=columns; i++)
-             {
-                if(i == 1 || 1 == rows || j == 1 || j == columns)
-                {
-                    printf("i");
-                }
-                else
-                {
-                    printf("O");
-                }
-             }
-             printf("\n");
-        }
-        return 0;
-        }
-  **20). Mahi and raina**
-  
-        #include <stdio.h>
-        int main() 
-        {
-            int i, j, k;
-            scanf("%d",&i);
-            scanf("%d",&j);
-            scanf("%d",&k);
-            if (j> 1&&k > j)
-             {
-                printf ("TRUE");
-             }
-             else
-             {
-                 printf ("FALSE");
-             }
-            return 0;
-        }
         
