@@ -270,7 +270,7 @@
 	printf("%.2f",b);
 	return 0;
 	}
-**23). Sum of the series
+**23). Sum of the series**
 
 	#include <stdio.h>
 	int series_sum(int n)
