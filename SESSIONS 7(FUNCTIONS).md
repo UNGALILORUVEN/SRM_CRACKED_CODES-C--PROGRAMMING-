@@ -124,3 +124,74 @@
         printf("%d",superd(sumd));
         return 0;
     }
+
+**4).IPV4 ADDRESSInternet protocol addressing**
+            
+       #include <stdio.h>
+     #include <string.h>
+     #include <stdlib.h>
+
+        #define DELIM "."
+    int valid_digit(char *ip_str)
+     { 
+     while (*ip_str) {
+        if (*ip_str >= '0' && *ip_str <= '9')
+            ++ip_str;
+        else
+            return 0;
+    }
+    return 1;
+    }
+
+     int is_valid_ip(char *ip_str)
+      {
+     int i, num, dots = 0;
+        char *ptr;
+ 
+    if (ip_str == NULL)
+        return 0;
+ 
+    ptr = strtok(ip_str, DELIM);
+ 
+    if (ptr == NULL)
+        return 0;
+ 
+    while (ptr) {
+ 
+
+        if (!valid_digit(ptr))
+            return 0;
+ 
+        num = atoi(ptr);
+ 
+    
+        if (num >= 0 && num <= 255) {
+        
+            ptr = strtok(NULL, DELIM);
+            if (ptr != NULL)
+                ++dots;
+        } else
+            return 0;
+    }
+ 
+    if (dots != 3)
+        return 0;
+    return 1;
+       }
+ 
+     int main()
+     {int t,i;
+      char ip_str[50];
+     //scanf("%s",ip_str);
+      scanf("%d",&t);
+     LOOP :do
+     {
+       if ( t != 0 )
+     {
+            scanf("%s",ip_str);
+       is_valid_ip(ip_str)? printf("Valid\n"): printf("Not valid\n");
+      t=t-1;
+     goto LOOP;
+    }}while(t>0);
+        return 0;
+    }
