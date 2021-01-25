@@ -341,29 +341,69 @@
       printf("%.2f",si);
       return 0;
       }
- **18). Mersal vs Babubali
+ **18). Mersal vs Babubali**
+ 
+       #include <stdio.h>
+       int main()
+    {
+        int n,i,b,o;
+        scanf("%d",&n);
+        int a[n];
+        b=0,o=0;
+        for(i=0;i<n; i++)
+        {
+            scanf("%d",&a[1]);
+            if(a[1]%2==0)
+            {
+                b++;
+            }
+            else
+            {
+                o++;
+            }
+        }
+        if(b>o)
+        {
+                printf("READY FOR BATTLE");
+        }
+        else
+        {
+                printf("NOT READY");
+        }
+        return 0;
+    }
+19). India vs England**
+
+    #include <stdio.h>
+    int main()
+    {
+       int a;
+       scanf("%d",&a);
+       if(a>0)
+       {
+          if (a%2==0)
+          printf("ENGLAND");
+          else if(a%2!=0)
+          printf("INDIA");
+       }
+       else
+           printf ("Sorry");
+       return 0;
+     }
+ **20). Swap Numbers**
  
       #include <stdio.h>
       int main()
-     {
-     int n,i,b,o;
-     scanf("%d",&n);
-     int a[n];
-     b=0,o=0;
-     for(i=0;i<n; i++)
-     {
-         scanf("%d",&a[1]);
-         if(a[1]%2==0)
-         {
-             b++;
-         }
-         else
-         {
-             o++;
-         }
-     }
- 
- 
+      {
+      int a=0;int b=0;
+      scanf("%d%d",&a,&b);
+      a=a+b;
+      b=a-b;
+      a=a-b;
+      printf("Values after Swapping\nvalue of a is:%d\nvalue of b is:%d", a,b);
+      return 0;
+      }
+**21). Seasoners
 
-  
+     
  TO BE CONTINUED....
