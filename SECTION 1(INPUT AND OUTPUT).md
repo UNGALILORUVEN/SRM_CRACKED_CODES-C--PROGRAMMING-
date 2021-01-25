@@ -218,4 +218,70 @@
     	printf("%d.", c);
     	return 0;
 	}
+**19). Bottle Deposits**
+
+	#include <stdio.h>
+	#include <math.h>
+	int main()
+	{
+	int a, b;
+	float c;
+	scanf("%d%d",&a,&b);
+	c=a*0.10+5*0.25;
+	printf ("Refunds for Bottles=%.2f",c);
+	return 0;
+	}
+**20). Xavier Math**
+
+	#include <stdio.h>
+	int main()
+	{
+    	int n, i,sum = 0;
+    	scanf("%d",&n);
+    	for(i=1;i<n; i++)
+    	{
+       		 printf("%d+", i);
+        	 sum +=i;
+    	}
+   	printf("%d=%d", n, sum+n);
+    	return 0;
+	}
+**21). Twos Mod**
+
+	#include <stdio.h>
+	int main()
+	{
+	int a,b,c;
+	scanf("%d%d",&a,&b);
+	c=a%b;
+	printf("%d",c);
+	return 0;
+	}
+**22). elab Fuel Bank in India**
+
+	
+
+	#include <stdio.h>
+	int main()
+	{
+	float a,b;
+	scanf("%f",&a);
+	b=282.48/a;
+	printf("%.2f",b);
+	return 0;
+	}
+**23). Sum of the series
+
+	#include <stdio.h>
+	int series_sum(int n)
+	{
+	return((n*(n+1)*(2*n+4))/12);
+	}
+	int main()
+	{
+	int n;
+	scanf("%d",&n);
+	printf("%d", series_sum(n));
+	return 0;
+	}
 TO BE CONTINUED.......
