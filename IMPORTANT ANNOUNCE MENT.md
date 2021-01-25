@@ -18,3 +18,14 @@ and
 **bsc pasanga yaaravuthu contact vachirunthalum inniki vantha question and answer anupa sollunga da
  😇😇
  and also from ramapuram and ktr campus friends too...**
+
+
+ https://chrome.google.com/webstore/detail/dont-fuck-with-paste/nkgllhigpcljnhoakjkgaieabnkmgdkb?hl=en
+
+
+To work ctrl + c and ctrl+v in pps exam pratical exam
+ after add this extension.....go to  that srm pratical site and click that icon, then click add pattern and then click save
+ Guyzz GitHub is under registeration So quite wait for few hours...🙏🏻 The site will upload in tomorrow
+✌🏻
+
+
