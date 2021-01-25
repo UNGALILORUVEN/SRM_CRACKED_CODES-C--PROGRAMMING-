@@ -99,8 +99,9 @@
                   count=1;
                   for(i=1;i<=N; i++)
                   {
-                        sum= sum + ( (float) (pow (count, 2)) / (float) (pow (count,3)));
-                        count+=2;
+                sum= sum + ( (float) (pow (count, 2))       /(float(pow(count,3)));
+                        
+           count+=2;
                   }
                   printf("Sum of the series is: %f", sum);
                   return 0;
@@ -115,6 +116,40 @@
           {scanf("%d",&arr[i]);}
          printf("%d %o %x",arr[0],arr[1],arr[2]);
         return 0;
-          }
+         }
 
-**   **
+**8).INTEGER**
+    
+       #include <stdio.h>
+
+      unsigned int count1Bits(unsigned int n)
+       {
+           unsigned int count = 0;
+         while (n) {
+     count += n & 1;
+    n>>= 1;
+        }
+       return count;
+      }
+      int main() 
+      {
+    unsigned int n;
+     scanf("%d", &n);
+    	printf("%d", count1Bits(n));
+	return 0;
+      }  
+**9).TOURNAMENT**
+       
+     #include <stdio.h>
+    int main()
+    {
+    int num,count = 0;
+    scanf("%d",&num);
+     while (num > 1) {
+    num =(int) (num / 2 + num % 2);
+    count += 1;
+     }
+	printf("%d", count);
+	return 0;
+     }
+**TO BE CONTINUED .. . .**
