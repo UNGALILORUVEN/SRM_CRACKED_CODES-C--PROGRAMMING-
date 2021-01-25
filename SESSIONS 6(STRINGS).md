@@ -325,3 +325,43 @@
     	}
     	return 0;
     }
+
+ **7).YOUTUBER SUM**
+           #include <stdio.h>
+#include <string.h>
+
+int isPali(char str[], char remain[], int spot){
+    if (strlen(remain) == spot){
+        int len = strlen(str);
+        int i, pali = 1;
+        for (i=0; i < len; i++){
+            if (str[i] != str[len-1-i]){
+                pali = 0;
+                break;
+            }
+        }
+        if (pali == 1 && len > 0){
+            return 1;
+        } else {
+            return 0;
+        }
+    } else {
+        char var = remain[spot];
+        char str2[50];
+        strcpy(str2, str);
+        strncat(str2, &var, 1);
+        return isPali(str2, remain, spot+1) + isPali(str, remain, spot+1);
+    }
+}
+
+
+
+int main()
+{
+    char remain[50];
+    scanf("%s",remain);
+    char str[50] = "";
+    int sum = isPali(str, remain, 0);
+    printf("%d", sum);
+    return 0;
+}
