@@ -341,7 +341,29 @@
       printf("%.2f",si);
       return 0;
       }
-
+ **18). Mersal vs Babubali
+ 
+      #include <stdio.h>
+      int main()
+     {
+     int n,i,b,o;
+     scanf("%d",&n);
+     int a[n];
+     b=0,o=0;
+     for(i=0;i<n; i++)
+     {
+         scanf("%d",&a[1]);
+         if(a[1]%2==0)
+         {
+             b++;
+         }
+         else
+         {
+             o++;
+         }
+     }
+ 
+ 
 
   
  TO BE CONTINUED....
