@@ -152,4 +152,7 @@
 	printf("%d", count);
 	return 0;
      }
+ **10). Nth FIBO
+ 
+ 
 **TO BE CONTINUED .. . .**
