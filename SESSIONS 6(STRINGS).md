@@ -617,6 +617,30 @@
     program();
     return 0;
     }
-    
+**13). Sort of String
 
+        #include<stdio.h>
+        #include<string.h>
+        int main()
+        {
+            int i,j,count;
+            char str[25][25],temp[25];
+            scanf("%d",&count);
+            for(i=1;i<=count;i++)
+            scanf("%s", str[i]);
+            for(i=0;i<=count;i++)
+             for(j=i+1;j<=count;j++)
+             {
+                if(strcmp(str[i],str[j])>0)
+                {
+                    strcpy(temp,str[i]);
+                    strcpy(str[i],str[j]);
+                    strcpy(str[j],temp);
+                }
+             }
+            for(i=0;i<=count;i++)
+            printf("%s\n",str[i]);
+            return 0;
+         }
+         
  TO BE CONTINUED......
