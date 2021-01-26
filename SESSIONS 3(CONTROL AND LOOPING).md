@@ -570,4 +570,33 @@
         }
         return 0;
     }
+ **22). Three idiots
+ 
+        #include <stdio.h>
+        int main() 
+        {
+            float a,b,c,d,e,f;
+            scanf("%f\t%f\n%f\t%f",&a,&b,&c,&d);
+            e=(a+c)/2;
+            f=(b+d)/2;
+            printf("Binoys house is located at(%.1f,%.1f)",e,f);
+            return 0;
+        }
+  **23). Finding OR of Two numbers
+  
+        #include <stdio.h>
+        int main() 
+        {
+        int a,b;
+        scanf("%d",&a);
+        scanf("%d",&b);
+        printf("Bitwise OR of ");
+        printf("%d",a);
+        printf("and ");
+        printf("%d",b);
+        printf(" is = ");
+        printf("%d",a|b);
+        return 0;
+        }
+  
 TO  BE CONTINUED.....
