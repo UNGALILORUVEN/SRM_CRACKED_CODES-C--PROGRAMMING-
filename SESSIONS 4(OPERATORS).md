@@ -173,5 +173,62 @@
    		else
     			return ( Fibonacci_Series(Number - 1) + Fibonacci_Series(Number - 2) );
 	}
+**19). Greddy Puppy
 
-**TO BE CONTINUED .. . .**
+	#include <stdio.h>
+	int main() 
+	{
+  	int t,n,k;
+  	scanf("%d", &t);
+  	int i=0,j=0, max=0;
+  	for (i=0;i<t;i++)
+  	{
+   		scanf("%d%d", &n,&k);
+    		for(j=1;j<=k;j++)
+   		{
+    		if((n%j)>max)
+  		{
+    			max=n%j;
+   		}
+ 		}
+ 		printf("%d\n",max);
+ 		max=0;
+ 	}
+	return 0;
+	}
+**20). Finding Bitwase EXOR of Two Numbers
+
+	#include <stdio.h>
+	int main()
+	{
+ 	int a,b;
+ 	scanf("%d", &a);
+ 	scanf("%d",&b);
+ 	printf("Bitwise EX-OR of ");
+ 	printf("%d", a);
+ 	printf(" and ");
+ 	printf("%d",b);
+ 	printf(" is= ");
+ 	printf("%d" ,a^b);
+ 	return 0;
+	}
+**21). Case of Zeros and Ones
+
+	#include<stdio.h>
+	#include<stdlib.h>
+	int main()
+	{
+  		int n,i,c1=0,c0=0;
+  		char c[200001];
+  		scanf("%d", &n);
+  		scanf("%s",c);
+  		for(i=0;i<n;i++)
+  		if(c[i]=='1')
+    			c1++;
+  		else
+    			c0++;
+    		printf("%d",abs(c1-c0));
+ 		return 0;
+	}
+	
+**TO BE CONTINUED..........**
