@@ -81,11 +81,8 @@ OUTPUT FOR ABOVE PROGRAM:
 	output  :
 		
 		the total marks subject tamil,english,maths,physics,chemistry,computer_science is: 494                          the total mark is :99.0  
-**PROGRAM GDB LINK FOR ABOVE PROGRAM** 
-   
-	https://onlinegdb.com/SyD8OXZiw
 
-**PRE INCREAMENT AND POST INCREAMENT(PROGRAM 5)**
+**PRE INCREAMENT AND POST INCREAMENT(PROGRAM 6)**
 
 	#include <stdio.h>
 	int main()
@@ -98,12 +95,12 @@ OUTPUT FOR ABOVE PROGRAM:
     		printf("\nThe postincrement is =%d",inc++); 
     		return 0;
 	}
-
 **PROGRAM GDB LINK FOR ABOVE PROGRAM** 
-	
-	https://onlinegdb.com/hWiuNQRAh
+   
+	https://onlinegdb.com/SyD8OXZiw
 
-**PRE INCREAMENT AND DECREAMENT**
+
+**PRE INCREAMENT AND DECREAMENT(PROGRAM 7)**
 	
 	#include <stdio.h>
 	int main()
@@ -121,12 +118,10 @@ OUTPUT FOR ABOVE PROGRAM:
    	 return 0;
 	 } 
 //NOTE: (PRE) MEANS CHANGE FROM THE NEXT STEP WHEATHER INCREASE OR DECREASE NOT FROM THAT STEP
-
 **PROGRAM GDB LINK FOR ABOVE PROGRAM** 
 	
-	https://onlinegdb.com/dLXB8kmEq
-
-**POST INCREAMENT AND DECREAMENT**
+	https://onlinegdb.com/hWiuNQRAh
+**POST INCREAMENT AND DECREAMENT(PROGRAM 8)**
 
 	#include <stdio.h>
 	int main()
@@ -143,4 +138,9 @@ OUTPUT FOR ABOVE PROGRAM:
     		printf("\n%d",y);  //post decreament change in value after the next step
     		return 0;
 		}
+
 //NOTE : (POST) MEANS CHANGE FROM THE NEXT STEP WHEATHER INCREASE OR DECREASE NOT FROM THAT STEP
+**PROGRAM GDB LINK FOR ABOVE PROGRAM** 
+	
+	https://onlinegdb.com/dLXB8kmEq
+
