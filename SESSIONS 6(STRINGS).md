@@ -374,7 +374,7 @@
             printf("%d", sum);
             return 0;
         }
-  **8). Pattern Searching
+  **8). Pattern Searching**
   
         #include <stdio.h>
         #include <string.h>
@@ -459,7 +459,7 @@
                 }
                 return 0;
                 }
-**6). Numbers to Words**
+**10). Numbers to Words**
 
             #include <stdio.h>
             #include <string.h>
