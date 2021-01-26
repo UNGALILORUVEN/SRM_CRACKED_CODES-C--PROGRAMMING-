@@ -284,7 +284,42 @@
 	printf("%d", series_sum(n));
 	return 0;
 	}
+**24). Welcome to world
 
+	#include <stdio.h>
+	int main ()
+	{
+	char n[20];
+	char c[20];
+	char p[20];
+	int s;
+	float sp;
+	scanf("%s",n);
+	scanf("%s",c);
+	scanf("%s",p);
+	scanf("%d",&s);
+	scanf("%f",&sp);
+	printf("Robot Details\n");
+	printf("I am the Robot named=%s\n",n);
+	printf("I was created by %s\n", c);
+	printf ("I am created for the purpose of %s\n",p);
+	printf("My memory space is around %dmb and my speed is %.1fTB",s,sp);
+	return 0;
+	}
+25). Mathematics Double
 
+	#include <stdio.h>
+	int main()
+	{
+	float num1, num2;
+	scanf("%f", &num1);
+	scanf("%f", &num2);
+	double res1 = (double) num1;
+	double res2 = (double) num2;
+	printf("%f\n", res1);
+	printf("%f\n", res2);
+	return 0;
+	}
+	
 
 TO BE CONTINUED.......
