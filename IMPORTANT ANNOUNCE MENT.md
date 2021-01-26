@@ -26,6 +26,8 @@ and
 
 
 
+
+
 _____________________________________________________________________________________________________________________________________
 
 
@@ -41,5 +43,9 @@ To work ctrl + c and ctrl+v in pps exam pratical exam
  after add this extension.....go to  that srm pratical site and click that icon, then click add pattern and then click save
  Guyzz GitHub is under registeration So quite wait for few hours...🙏🏻 The site will upload in tomorrow
 ✌🏻
+
+![98058abf-ab19-4603-aea9-29d56316708c](https://user-images.githubusercontent.com/70067609/105801149-841f4980-5fbe-11eb-8576-49562bbd769c.gif)
+
+
 
 
