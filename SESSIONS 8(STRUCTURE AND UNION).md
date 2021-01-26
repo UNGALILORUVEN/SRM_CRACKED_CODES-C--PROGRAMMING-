@@ -183,5 +183,64 @@
           printf("Number of workers = %d\n",j.workerNo);
           return 0;
         }
+**9). SRM Admissions
+
+      #include <stdio.h>
+      int main() 
+      {
+        struct candidate
+        {
+          char name[80];
+          int jeeerank,highersec;
+        };
+      struct candidate ad;
+      scanf("%s",ad.name);
+      printf("Name=%s\n",ad.name);
+      scanf("%d",&ad.jeeerank);
+      printf("JEEE Rank=%d\n",ad.jeeerank);
+      scanf("%d",&ad.highersec);
+      printf("12th Mark=%d\n",ad.highersec);
+		  return 0;
+      }
+ **10). CGPA
+ 
+       #include <stdio.h>
+       int main() 
+       {
+          union student
+          {
+              char name[30];
+              char subject[20];
+              float percentage;
+          };
+        union student record;
+        scanf("%s",record.name);
+        printf("Name: %s\n",record.name);
+        scanf("%s",record.subject);
+  	    printf("Subject: %s\n",record.subject);
+        scanf("%f",&record.percentage);
+        printf("Percentage: %.1f",record.percentage);
+	      return 0;
+      }
+  **11). Age
+  
+        #include <stdio.h>
+        union calci
+        {
+            int me;
+            int you;
+        };
+        int main() 
+        {
+          union calci age;
+          scanf("%d",&age.me);
+  	      printf("I am %d\n",age.me);
+          scanf("%d",&age.you);
+          printf("You are %d\n",age.you);
+	        return 0;
+        }
+  
+      
+
 
 
