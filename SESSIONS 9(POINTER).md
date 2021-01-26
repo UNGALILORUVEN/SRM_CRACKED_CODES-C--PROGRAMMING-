@@ -177,7 +177,7 @@
              }while(t>0);
              return 0;
            }
-   **7). Vijay's House
+   **7). Vijay's House**
    
         #include <stdio.h>
         void rect(int a,int b,int * area,int * perim)
@@ -194,7 +194,7 @@
         printf(" %d", Perimeter);
         return 0;
         }
-  **8). Reality show
+  **8). Reality show**
   
         #include <stdio.h>
         int main()
@@ -213,8 +213,3 @@
         printf("%d ", number[i]);                                
         return 0;
         }
-  
-
-
-     
-**HELLO EVERYONE THERE IS LESS QUESTIONS IN SESSION 9 PLZZ DONATE SOME CODE**
