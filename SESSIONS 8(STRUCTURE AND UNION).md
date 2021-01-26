@@ -239,8 +239,53 @@
           printf("You are %d\n",age.you);
 	        return 0;
         }
+  **12). Play With Number**
   
-      
+  	
+      include <stdio.h>
+      struct fraction
+	{
+    	int numerator,denominator;
+	};
+	int main()
+	{
+    	int div1,div2;
+    	struct fraction v1,v2;
+    	scanf("%d %d",&v1.numerator,&v1.denominator);
+    	scanf("%d %d",&v2.numerator,&v2.denominator);
+   	div1=v1.numerator/v1.denominator;
+    	div2=v2.numerator/v2.denominator;
+    	if(div1>div2) 
+      		printf("%d/%d is greater than %d/%d",v1.numerator,v1.denominator,v2.numerator,v2.denominator);
+    	else
+      		printf("%d/%d is smaller than %d/%d",v1.numerator,v1.denominator,v2.numerator,v2.denominator);
+
+    	return 0;
+	}	
+**13). Employee
+
+	#include <stdio.h>
+ 	struct employee
+	{
+    	char    name[30];
+   	int     empId;
+    	float   salary;
+	};
+ 	int main()
+	{
+ 
+    		struct employee emp;
+     
+
+           	scanf("%s",emp.name);
+             	scanf("%d",&emp.empId);
+         	scanf("%f",&emp.salary);
+     
+    	printf("%s\n"   ,emp.name);
+    	printf("%d\n"     ,emp.empId);
+    	printf("%.f\n",emp.salary);
+   	return 0;
+	}
 
 
 
