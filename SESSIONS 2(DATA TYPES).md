@@ -499,7 +499,7 @@
        printf("%d", (ctr*ctr));
        return 0;
      }
- **27). Hero's Formula/ Heroine's Formula**
+ **27). Hero's Formula/ Heron's Formula**
  
     #include <math.h>
     #include <stdio.h>
@@ -512,7 +512,7 @@
       printf("%.2f", area);
       return 0;
     }
- **28). ATM Transcation
+ **28). ATM Transcation**
  
      #include <stdio.h>
      int main()
@@ -531,7 +531,7 @@
         }
         return 0;
      }
-  **29). Chemistry pH value
+  **29). Chemistry pH value**
   
       #include <stdio.h>
       int main()
