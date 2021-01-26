@@ -127,71 +127,175 @@
 
 **4).IPV4 ADDRESSInternet protocol addressing**
             
-       #include <stdio.h>
-     #include <string.h>
-     #include <stdlib.h>
+                       #include <stdio.h>
+                     #include <string.h>
+                     #include <stdlib.h>
 
-        #define DELIM "."
-    int valid_digit(char *ip_str)
-     { 
-     while (*ip_str) {
-        if (*ip_str >= '0' && *ip_str <= '9')
-            ++ip_str;
-        else
-            return 0;
-    }
-    return 1;
-    }
+                        #define DELIM "."
+                    int valid_digit(char *ip_str)
+                     { 
+                     while (*ip_str) {
+                        if (*ip_str >= '0' && *ip_str <= '9')
+                            ++ip_str;
+                        else
+                            return 0;
+                    }
+                    return 1;
+                    }
 
-     int is_valid_ip(char *ip_str)
-      {
-     int i, num, dots = 0;
-        char *ptr;
- 
-    if (ip_str == NULL)
-        return 0;
- 
-    ptr = strtok(ip_str, DELIM);
- 
-    if (ptr == NULL)
-        return 0;
- 
-    while (ptr) {
- 
+                     int is_valid_ip(char *ip_str)
+                      {
+                     int i, num, dots = 0;
+                        char *ptr;
 
-        if (!valid_digit(ptr))
-            return 0;
- 
-        num = atoi(ptr);
- 
-    
-        if (num >= 0 && num <= 255) {
-        
-            ptr = strtok(NULL, DELIM);
-            if (ptr != NULL)
-                ++dots;
-        } else
-            return 0;
-    }
- 
-    if (dots != 3)
-        return 0;
-    return 1;
-       }
- 
-     int main()
-     {int t,i;
-      char ip_str[50];
-     //scanf("%s",ip_str);
-      scanf("%d",&t);
-     LOOP :do
-     {
-       if ( t != 0 )
-     {
-            scanf("%s",ip_str);
-       is_valid_ip(ip_str)? printf("Valid\n"): printf("Not valid\n");
-      t=t-1;
-     goto LOOP;
-    }}while(t>0);
-        return 0;
-    }
+                    if (ip_str == NULL)
+                        return 0;
+
+                    ptr = strtok(ip_str, DELIM);
+
+                    if (ptr == NULL)
+                        return 0;
+
+                    while (ptr) {
+
+
+                        if (!valid_digit(ptr))
+                            return 0;
+
+                        num = atoi(ptr);
+
+
+                        if (num >= 0 && num <= 255) {
+
+                            ptr = strtok(NULL, DELIM);
+                            if (ptr != NULL)
+                                ++dots;
+                        } else
+                            return 0;
+                    }
+
+                    if (dots != 3)
+                        return 0;
+                    return 1;
+                       }
+
+                     int main()
+                     {int t,i;
+                      char ip_str[50];
+                     //scanf("%s",ip_str);
+                      scanf("%d",&t);
+                     LOOP :do
+                     {
+                       if ( t != 0 )
+                     {
+                            scanf("%s",ip_str);
+                       is_valid_ip(ip_str)? printf("Valid\n"): printf("Not valid\n");
+                      t=t-1;
+                     goto LOOP;
+                    }}while(t>0);
+                        return 0;
+                    }
+
+**5).BOOK THAT NUMBER**
+
+                    #include <stdio.h>
+
+                    int main()
+                    {
+                        char isbn[10];
+                        int lines;
+                        scanf("%d", &lines);
+                        while (lines != 0){
+                            scanf("%s", isbn);
+                            if (isValidISBN(isbn) == 1){
+                                printf("VALID\n");
+                            } else {
+                                printf("INVALID\n");
+                            }
+                            lines -= 1;
+                        }
+                        return 0;
+                    }
+
+                    int isValidISBN(char isbn[]) {
+                        int i, sum=0;
+                        for (i=0; i < 10; i++){
+                            if (isbn[i] == 'X'){
+                                sum += 10 * (10-i);
+                            } else {
+                                sum += (isbn[i] - '0') * (10-i);
+                            }
+                            printf("%d\n", sum);
+                        }
+                        if (sum % 11 == 0){
+                            return 1;
+                        }
+                        return 0;
+                    }
+
+**6).ALL THE ARMS YOU KNOW**
+
+                #include <stdio.h>
+                #include <math.h>
+
+                int is_armstrong(int);
+
+                int main()
+                {
+                    int num;
+                    scanf("%d",&num);
+                    int i;
+                    printf("0");
+                    for (i=1; i < num; i++){
+                        if (is_armstrong(i) == 1){
+                            printf(" %d",i);
+                        }
+                    }
+                    return 0;
+                }
+
+                int is_armstrong(int number){
+                    int sum = 0, count = 1, temp;
+                    int number2 = number;
+                    while (number >= 10){
+                        temp = number%10;
+                        number = (number - temp)/10;
+                        count += 1;
+                    }
+                    number = number2;
+                    while (number >= 10){
+                        temp = number%10;
+                        number = (number - temp)/10;
+                        sum += pow(temp, count);
+                    }
+                    sum += pow(number,count);
+                    if (sum == number2){
+                        return 1;
+                    }
+                    return 0;
+                }
+
+**7).COUNT YAMINI COUNT **
+
+            #include <stdio.h>
+
+            int sum(int);
+
+            int main()
+            {
+                int number;
+                scanf("%d",&number);
+                printf("The sum of digits in %d is %d", number, sum(number));
+                return 0;
+            }
+
+            int sum(int number) {
+                if (number < 10) {
+                    return number;
+                } else {
+                    int num = number % 10;
+                    number = (number - num)/10;
+                    return sum(number) + num;
+                }
+            }
+****
