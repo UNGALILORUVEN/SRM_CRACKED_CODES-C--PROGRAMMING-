@@ -106,3 +106,82 @@
       printf("Sum of distances=%.2f inches",sumOfDistances.inch_of_type);
       return 0;
     }
+**6). History of institution**
+
+        #include <stdio.h>
+        #include <string.h>
+        struct College 
+        {
+          char name[100];
+          char city[100];
+          int establishmentYear;
+          float passPercentage;
+        };
+        int main()
+        {
+             int lines;
+             scanf("%d", &lines);
+             struct College S1[lines], temp;
+             int count;
+             for (count=0; count < lines; count++){
+                 scanf("%s", S1[count].name);
+                 scanf("%s", S1[count].city);
+                scanf("%d", &S1[count].establishmentYear);
+                scanf("%f", &S1[count].passPercentage);
+        }
+        int j;
+        for (count = 0; count < lines-1; count++)
+        {
+            for (j = count+1; j < lines; j++)
+            {
+                if (strcmp(S1[count].name,S1[j].name) > 0) 
+                {
+                    temp = S1[count];
+                    S1[count] = S1[j];
+                    S1[j] = temp;
+                }
+           }
+       }
+       printf("Details of colleges\n");
+       for (count = 0; count < lines; count++)
+       {
+          printf("Name:%s\n",S1[count].name);
+          printf("City:%s\n",S1[count].city);
+          printf("Year of establishment:%d\n",S1[count].establishmentYear);
+         printf("Pass percentage:%.1f\n",S1[count].passPercentage);
+      }
+      return 0;
+    }
+**7). Sum Distance in feet and inches**
+
+        #include <stdio.h>
+        struct Distance
+        {
+          int feet;
+          float inch;
+        } 
+        d1, d2, sumOfDistances;
+        int main()
+        {
+            scanf("%d %f", &d1.feet, &d1.inch);
+            scanf("%d %f", &d2.feet, &d2.inch);
+            sumOfDistances.feet = d1.feet + d2.feet;
+            sumOfDistances.inch = d1.inch + d2.inch;
+            printf("Sum of distances=%d feet and %.2f inches\n",sumOfDistances.feet, sumOfDistances.inch);
+            return 0;
+        }
+ **8). Acessing with using union**
+ 
+        #include <stdio.h>
+        union Job 
+        {
+          int workerNo;
+        } j;
+        int main()
+        {
+          scanf("%d", &j.workerNo);
+          printf("Number of workers = %d\n",j.workerNo);
+          return 0;
+        }
+
+
