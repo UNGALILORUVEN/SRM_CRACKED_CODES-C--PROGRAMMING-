@@ -1,3 +1,4 @@
+**PROGRAM 1**
 
 	#include<stdio.h>
 	int main()
@@ -43,7 +44,7 @@ OUTPUT FOR ABOVE PROGRAM:
   	return 0;
 	}
 
-**arithmatic operators(program 4)**
+**arithmatic operators(PROGRAM 4)**
 
 	#include <stdio.h>
 	main() 
@@ -61,7 +62,7 @@ OUTPUT FOR ABOVE PROGRAM:
    	printf("Line 4 - Value of c is %d\n", c );
  	return 0;
  	}
-**PROGRAM 4**
+**PROGRAM 5**
 
 	#include <stdio.h>
 	int main()
