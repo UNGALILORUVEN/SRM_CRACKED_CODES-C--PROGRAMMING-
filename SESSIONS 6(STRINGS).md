@@ -374,4 +374,164 @@
             printf("%d", sum);
             return 0;
         }
+  **8). Pattern Searching
+  
+        #include <stdio.h>
+        #include <string.h>
+        int main()
+        {
+            int lines;
+            char str[100];
+            char tofind[100];
+            scanf("%d", &lines);
+            while (lines != 0)
+            {
+                scanf("%s",str);
+                scanf("%s",tofind);
+                char *ptr = strstr(str, tofind);
+                if (ptr != NULL)
+                {
+                    printf("found\n");
+                } 
+                else 
+                {
+                    printf("not found\n");
+                }
+                lines -= 1;
+            }
+            return 0;
+         }
+**9). SORTING EMPLOYEES**
+
+            #include <stdio.h>
+            #include <string.h>
+            typedef struct 
+            {
+                char name[106];
+                int salary;
+            } 
+            employee;
+            int main()
+            {
+                int lines;
+                int count;
+                scanf("%d", &lines);
+                while (lines != 0) 
+                {
+                    employee e[1000];
+                    scanf("%d", &count);
+                    int i, j;
+                    for (i=0; i < count; i++)
+                    {
+                        scanf("%s", e[i].name);
+                        scanf("%d", &e[i].salary);
+                    }
+                    employee temp;
+                    for (i=0; i < count-1; i++)
+                    {
+                        for (j=i+1; j < count; j++)
+                        {
+                            if(e[i].salary > e[j].salary)
+                            {
+                                temp = e[i];
+                                e[i] = e[j];
+                                e[j] = temp;
+                             }
+                            else 
+                            {
+                                if (e[i].salary == e[j].salary)
+                                {
+                                    if (strcmp(e[i].name,e[j].name) > 0)
+                                    {
+                                        temp = e[i];
+                                        e[i] = e[j];
+                                        e[j] = temp;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    lines -= 1;
+                    for (i=0; i < count; i++){
+                    printf("%s %d ",e[i].name, e[i].salary);
+                    }
+                    printf("\n");
+                }
+                return 0;
+                }
+**6). Numbers to Words**
+
+            #include <stdio.h>
+            #include <string.h>
+            #include <stdlib.h>
+            /* A function that prints given number in words */
+            void convert_to_words(char *num)
+            {
+                int len = strlen(num); // Get number of digits in given number
+                char *single_digits[] = { "zero", "one", "two", 
+                                           "three", "four","five", 
+                                           "six", "seven", "eight", "nine"};
+ 
+                char *two_digits[] = {"", "ten", "eleven", "twelve", 
+                                            "thirteen", "fourteen",
+                                            "fifteen", "sixteen", 
+                                            "seventeen", "eighteen", "nineteen"};
+ 
+                char *tens_multiple[] = {"", "", "twenty", "thirty", "forty", "fifty",
+                                        "sixty", "seventy", "eighty", "ninety"};
+ 
+                char *tens_power[] = {"hundred", "thousand"};
+ 
+                if (len == 1) {
+                printf("%s\n", single_digits[*num - '0']);
+                return;
+                }
+ 
+                while (*num != '\0') {
+ 
+                if (len >= 3) {
+                       if (*num -'0' != 0) {
+                         printf("%s ", single_digits[*num - '0']);
+                         printf("%s ", tens_power[len-3]);
+                }
+                --len;
+                }
+ 
+                else {
+                    if (*num == '1') {
+                         int sum = *num - '0' + *(num + 1)- '0';
+                         printf("%s\n", two_digits[sum]);
+                         return;
+                        }   
+ 
+                else if (*num == '2' && *(num + 1) == '0') {
+                        printf("twenty\n");
+                        return;
+                    }   
+ 
+                else {
+                    int i = *num - '0';
+                    printf("%s ", i? tens_multiple[i]: "");
+                    ++num;
+                    if (*num != '0')
+                        printf("%s ", single_digits[*num - '0']);
+                    }
+            }
+            ++num;
+         }
+    }
+
+    int main() {
+        int lines;
+        scanf("%d", &lines);
+        char str[4];
+        while (lines != 0) {
+            scanf("%s", str);
+            convert_to_words(str);
+            lines -= 1;
+        }
+        return 0;
+    }
+
+
  TO BE CONTINUED......
