@@ -183,7 +183,7 @@
           printf("Number of workers = %d\n",j.workerNo);
           return 0;
         }
-**9). SRM Admissions
+**9). SRM Admissions**
 
       #include <stdio.h>
       int main() 
@@ -202,7 +202,7 @@
       printf("12th Mark=%d\n",ad.highersec);
 		  return 0;
       }
- **10). CGPA
+ **10). CGPA**
  
        #include <stdio.h>
        int main() 
@@ -222,7 +222,7 @@
         printf("Percentage: %.1f",record.percentage);
 	      return 0;
       }
-  **11). Age
+  **11). Age**
   
         #include <stdio.h>
         union calci
