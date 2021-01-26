@@ -152,7 +152,7 @@
       }
       return 0;
     }
-**7). Sum Distance in feet and inches**
+**7). DISTANCE**
 
         #include <stdio.h>
         struct Distance
@@ -170,7 +170,7 @@
             printf("Sum of distances=%d feet and %.2f inches\n",sumOfDistances.feet, sumOfDistances.inch);
             return 0;
         }
- **8). Acessing with using union**
+ **8). ACCESSING UNION MEMBERS **
  
         #include <stdio.h>
         union Job 
