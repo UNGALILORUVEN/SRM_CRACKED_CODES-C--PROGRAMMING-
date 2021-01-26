@@ -298,7 +298,7 @@
                     return sum(number) + num;
                 }
             }
- **8). Classic prime
+ **8). Classic prime**
  
     #include <stdio.h>
     #include <math.h>
@@ -402,7 +402,7 @@
     
         return (num == sum);
     }
-**9). Light and Multiply
+**9). Light and Multiply**
 
     #include<stdio.h>
     int multiply(int n1, int n2);
@@ -419,8 +419,44 @@
         result = n1 * n2;
         return result;
     }
-    
+ **10).  Dr who's time travel**
+ 
+        #include <stdio.h>
+        int addition(int a,int b)
+        {
+            return a+b;
+        }
+        int main()
+        {
+        int x,y;
+        scanf("%d %d",&x,&y);
+        int c=addition(x,y);
+        printf("%d",c);
+        return 0;
+        }
+ **11). Words that see through**
 
+       #include <math.h>
+    #include <stdio.h>
+    #include <string.h>
+    #include <stdlib.h>
+    #include <assert.h>
+    #include <limits.h>
+    #include <stdbool.h>
+
+    int main()
+    {
+        char* s = (char *)malloc(10240 * sizeof(char));
+        scanf("%s",s);
+        int coun=0,i;
+        for(i=0;i<strlen(s);i++)
+        {
+            if(s[i]>=65 && s[i]<=90){coun++;}
+        }
+        printf("%d\n",coun+1);
+        return 0;
+    }
+    
 
 
 
