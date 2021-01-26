@@ -13,7 +13,7 @@
         printf("\nAfter adding 10\nvalue of a: %d, b: %d, c: %d", *ptr[0], *ptr[1], *ptr[2]);
         return 0;
         }
- **2). Reverse the string for every '.'**
+ **2)DHONI AND SHANE WATSON**
  
         #include <stdio.h>
         #include <string.h>
@@ -54,7 +54,7 @@
         }
         return 0;
       }
-  **3). Change constant value using pointer
+  **3). Change constant value using pointer**
   
              #include <stdio.h>
              int main()
@@ -67,7 +67,7 @@
                 printf("After changing - value of a:%d\n",a);
                 return 0;
              }
- **4). Interchange num
+ **4). TEACHER**
  
                 #include <stdio.h>
                 void interchange (int *num1, int *num2)
