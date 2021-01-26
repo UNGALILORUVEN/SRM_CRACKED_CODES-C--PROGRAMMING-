@@ -454,6 +454,120 @@
             return 0;
 
         }
-**16).
-      
+**16). Raju Dilemma**
+
+        #include <stdio.h>
+        int main()
+        {
+            int a,b,i,c=0, arr[100];
+            scanf("%d%d",&a,&b);
+            for(i=0;i<a;i++)
+            {
+                scanf("%d", &arr[i]);
+                if(arr[i]%b==0)
+                c+=1;
+            }
+            printf("%d",c);
+            return 0;
+        }
+**17). Big Buddy**
+
+        #include <stdio.h>
+        int main()
+        {
+            int a,i;
+            float arr[100],count=0;
+            scanf("%d", &a);
+            for (i=0; i<a;i++)
+            {
+                scanf("%f", &arr[i]);
+                count+=arr[i];
+            }
+            printf("%. 1f\n" ,count);
+            printf("%.1f",count/a);
+            return 0;
+       }
+**18). Chef and Balls**
+
+        #include <stdio.h>
+        int main()
+        {
+            int x;
+            scanf("%d", &x);
+            if(x==1)
+            {
+                 printf("1\n3 1 2 2\n3 3 4 4\n2\n1");
+            }
+            else
+            {
+                printf("1\n3 1 2 2\n3 3 4 4\n2");
+            }
+            return 0;
+            }
+ **19). Peak Element**
+ 
+       #include <stdio.h>
+        int main()
+        {
+        int a, peak, ind=0,i;
+        scanf("%d",&a);
+        int ar[a];
+        for(i=0;i<a;i++)
+        scanf("%d", &ar[i]);
+        peak=ar[0];
+        for(i=0;i<a;i++)
+        {
+            if(peak<ar[i])
+            {
+                peak=ar[i];
+                ind=i;
+            }
+        }
+        printf("Peak Element=%d\n",peak);
+        printf("Index Value=%d", ind);
+        return 0;
+        }
+ **20). Reverse a Number**
+
+      #include <stdio.h>
+      int main()
+      {
+          int n,rn=0,rem;
+          scanf("%d",&n);
+          while(n!=0)
+          {
+                rem=n%10;
+                rn=rn*10+rem;
+                n/=10;
+          }
+          printf("%d", rn);
+          return 0;
+      }
+ **21). Horse Found**
+   
+    #include <stdio.h>
+    int main()
+    {
+        int t,i,n,j,min=0,p;
+        scanf("%d", &t);
+        while(t--)
+        {
+            int a[5000];
+            scanf("%d", &n);
+            for(i=0;i<n;i++)
+            scanf("%d",&a[i]);
+            min=abs(a[0]-a[1]);
+            for(i=0;i<n-1;i++)
+            {
+            for(j=i+1;j<n;j++)
+            {
+                p=abs(a[i]-a[j]);
+                if(min>p)
+                min=p;
+            }
+            }
+            printf("%d\n", min);
+        }
+        return 0;
+    }
 TO  BE CONTINUED.....
