@@ -546,5 +546,33 @@
            printf("basic");
          return 0;
       }
+  **30). Gross Salary
+  
+       #include <stdio.h>
+       int main() 
+      {
+         float n,i,bs,hra,da;
+         float gs;
+         scanf("%f",&n);
+         for(i=0;i<n;i++)
+         {
+           scanf("%f",&bs);
+           if(bs<1500)
+           {
+              hra=0.1*bs;
+              da=0.9*bs;
+              gs=hra+da+bs;
+           }
+         else if(bs>=1500)
+         {
+             da=0.98*bs;
+             gs=bs+500+da;
+         }
+         printf("\n%.2f",gs);
+        }
+	       return 0;
+    }
+    
+    
 
  TO BE CONTINUED....
