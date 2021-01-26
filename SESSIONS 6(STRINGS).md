@@ -532,6 +532,91 @@
         }
         return 0;
     }
-
+**11). Sorting of strings**
+    
+        #include <stdio.h>
+        #include<string.h>
+        void main()
+        {
+        int i,j,n;
+        char str[100][100],s[100];
+        scanf("%d",&n);
+        for(i=0;i<n;i++)
+        {
+            scanf("%s",str[i]);}
+            for(i=0;i<n;i++)
+            {
+                 for(j=i+1;j<n;j++)
+                 {
+                 if(strcmp(str[i],str[j])>0)
+                 {
+                    strcpy(s,str[i]);
+                    strcpy(str[i],str[j]);
+                    strcpy(str[j],s);
+                  }
+                 }
+            }
+            for(i=0;i<n;i++){
+    	    printf("%s\n",str[i]);
+        }
+       }
+  **12). W string**
+  
+    #include <stdio.h>
+    #include<string.h>
+    #include<malloc.h>
+    void program();
+    char s[10003];
+    int *max1, *max2, *max3;
+    int k1=0;
+    void fxn(int n)
+    {
+        int x[30]={0};
+        int x2[30]={0};
+        int x3[30]={0};
+        int max=0,i,max_2=0,max_3=0;
+        int j,k=0;
+        for(i=0;i<n;i++)
+        {
+            if(s[i]=='#')
+            {
+                max1[k]=max;
+                max2[k]=max_2;
+                for(j=0;j<30;j++) x2[j]=0;
+                max_2=0;
+                k++;
+                continue;
+            }
+            x[s[i]-'a']++;
+            x2[s[i]-'a']++;
+            if(x2[s[i]-'a']>max_2)
+            max_2= x2[s[i]-'a'];
+            if(x[s[i]-'a']>max)
+            max= x[s[i]-'a'];
+        }
+        k--;
+        k1=k;
+        for(i=n-1;i>=0;i--)
+        {
+            if(s[i]=='#')
+            {
+                max3[k]= max_3;
+                k--;
+                continue;
+            }
+            x3[s[i]-'a']++;
+            if(x3[s[i]-'a'] >max_3)
+            max_3= x3[s[i]-'a'];
+        }
+    }
+    int main()
+    {
+    int t;
+    scanf("%d",&t);
+    while(t--)
+    program();
+    return 0;
+    }
+    
 
  TO BE CONTINUED......
