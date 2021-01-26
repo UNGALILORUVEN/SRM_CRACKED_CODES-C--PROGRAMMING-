@@ -170,7 +170,7 @@
             printf("Sum of distances=%d feet and %.2f inches\n",sumOfDistances.feet, sumOfDistances.inch);
             return 0;
         }
- **8). ACCESSING UNION MEMBERS **
+ **8). ACCESSING UNION MEMBERS**
  
         #include <stdio.h>
         union Job 
