@@ -284,7 +284,7 @@
 	printf("%d", series_sum(n));
 	return 0;
 	}
-**24). Welcome to world
+**24). Welcome to world**
 
 	#include <stdio.h>
 	int main ()
@@ -306,7 +306,7 @@
 	printf("My memory space is around %dmb and my speed is %.1fTB",s,sp);
 	return 0;
 	}
-25). Mathematics Double
+**25). Mathematics Double**
 
 	#include <stdio.h>
 	int main()
@@ -321,5 +321,8 @@
 	return 0;
 	}
 	
+**26).Tsunami Indonesia**
+
+
 
 TO BE CONTINUED.......
