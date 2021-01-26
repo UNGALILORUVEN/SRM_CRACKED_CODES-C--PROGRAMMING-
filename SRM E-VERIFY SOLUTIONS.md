@@ -47,7 +47,7 @@
 		}
     		return 0; 
 	}
-**3). Divide and eat
+**3). Divide and eat**
 
 	#include <stdio.h>
 	int main() {
