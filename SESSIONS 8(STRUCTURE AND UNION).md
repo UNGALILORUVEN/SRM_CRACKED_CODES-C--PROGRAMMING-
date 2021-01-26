@@ -262,7 +262,7 @@
 
     	return 0;
 	}	
-**13). Employee
+**13). Employee**
 
 	#include <stdio.h>
  	struct employee
@@ -306,7 +306,7 @@
     	printf("%d %d",ctrV,ctrC-0);        
     	return 0;
 	}
-**15). Fee structure
+**15). Fee structure**
 
 	#include<stdio.h>
 	union Student
@@ -328,7 +328,7 @@
 		printf("Fees=%d\n",s1.fees);
     		return 0;
 	}
-**16). Word stem
+**16). Word stem**
 
 	#include <stdio.h>
 	#include<string.h>
