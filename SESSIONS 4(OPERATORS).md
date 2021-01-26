@@ -230,5 +230,34 @@
     		printf("%d",abs(c1-c0));
  		return 0;
 	}
+**22). Shape Up
+
+
+	#include<stdio.h>
+	int main()
+	{
+  		int a;
+  		scanf("%d", &a);
+  		switch(a)
+  		{
+    		case 7:
+     			printf("Heptagon");
+     			break;
+    		case 8:
+    			printf("Octagon");
+     			break;
+    		case 9:
+     			printf("Nanogon");
+     			break;
+    		case 10:
+     			printf("Decagon");
+     			break;
+   		default:
+    			printf("Not identified");
+  		}
+		return 0;
+	}
+	
+	
 	
 **TO BE CONTINUED..........**
