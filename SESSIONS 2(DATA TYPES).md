@@ -403,7 +403,100 @@
       printf("Values after Swapping\nvalue of a is:%d\nvalue of b is:%d", a,b);
       return 0;
       }
-**21). Seasoners
+**21). Seasoners**
 
-     
+     #include <stdio.h>
+     int main ()
+     {
+       char month[100],l[3];
+        scanf("%s",month);
+        scanf("%s",l);
+        if((strcmp(l,"22")==0)&&(strcmp(month, "Sep")==0))
+        {
+            printf("Fall");
+        }
+        if((strcmp(l,"20")==0)&&(strcmp(month, "Man")==0))
+        {
+            printf("Summer");
+        }
+       if((strcmp(l,"21")==0)&&(strcmp(month,"Jun")==0))
+       {
+            printf("Spring");
+       }
+       if((strcmp(l,"21")==0)&&(strcmp(month,"Dec")==0))
+       {
+            printf("winter");
+       }
+ **22). Narcissistic Sum**
+ 
+      #include <stdio.h>
+      int main() 
+     {
+        int n;
+        scanf("%d",&n);
+        int temp, sum=0;
+        temp=n;
+        while(n>0)
+        {
+             sum=sum+((n%10)*(n%10)*(n%10));
+             n=n/10;
+        }
+        if(sum==temp)
+           printf("Narcissistic Number");
+        else
+           printf("NOT Narcissistic Number");
+        return 0;
+     }
+ **23). Welcome to World**
+ 
+        #include <stdio.h>
+        int main ()
+        {
+          char n[20];
+          char c[20];
+          char p[20];
+          int s;
+          float sp;
+          scanf("%s",n);
+          scanf("%s",c);
+          scanf("%s",p);
+          scanf("%d",&s);
+          scanf("%f",&sp);
+          printf("Robot Details\n");
+          printf("I am the Robot name=%s\n",n);
+          printf("I was created by %s\n", c);
+          printf ("I am created for the purpose of %s\n",p);
+          printf("My memory space is around amb and my speed is %.1fTB",s,sp);
+          return 0;
+        }
+ **24). Display your name**
+ 
+    #include <stdio.h>
+    int main(void)
+    {
+      char string[25];
+      scanf("%[^\n]*c", string);
+      printf("Your name is:%s", string);
+      return 0;
+    }
+**25). Cube of a number**
+
+    #include <stdio.h>
+    int main()
+    {
+      int ctr;
+      scanf("%d",&ctr);
+      printf("%d\n", (ctr*ctr*ctr));
+      return 0;
+    }
+**26). Square of the Number**
+
+     #include <stdio.h>
+     int main()
+     {
+       int ctr;
+       scanf("%d",&ctr);
+       printf("%d", (ctr*ctr));
+       return 0;
+     }
  TO BE CONTINUED....
