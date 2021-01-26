@@ -1,3 +1,5 @@
+**sum of three numbers**
+
 #include<stdio.h>
 int main()
 {
@@ -14,7 +16,8 @@ output 1:the num 2,3,5
 the sum of these three num is:10
 
 
-\\program 2
+**\\program 2(sum and diff of two numbers)**
+
 #include<stdio.h>
 int main()
 {
@@ -34,7 +37,7 @@ the diff of these 3,2 is:1
 out put
 the num 2,3,5the sum of these three num is:10
 
-
+**3).programming string **
 #include <stdio.h>
 int main()
 {
@@ -45,7 +48,7 @@ int main()
   return 0;
 }
 
-arithmatic operators  
+**4).arithmatic operators ** 
 
 #include <stdio.h>
 
@@ -69,7 +72,7 @@ main() {
  return 0;
  }
 	
-
+**5).total and average of 6 subjects**
 
 #include <stdio.h>
 
@@ -97,7 +100,7 @@ the total mark is :99.0
 
 https://onlinegdb.com/SyD8OXZiw
 
-
+**7).increament **
 #include <stdio.h>
 
 int main()
@@ -112,7 +115,7 @@ int main()
 }
 
 
-pre increament and decrement
+**9).pre increament and decrement**
 https://onlinegdb.com/hWiuNQRAh
 
 //pre increament and decreament  by sankar
@@ -134,7 +137,7 @@ int main()
 } //NOTE pre MEANS CHANGE FROM THE NEXT STEP WHEATHER INCREASE OR DECREASE NOT FROM THAT STEP
 
 
-post increament,decreament
+**10).post increament,decreament**
 
 https://onlinegdb.com/dLXB8kmEq
 
