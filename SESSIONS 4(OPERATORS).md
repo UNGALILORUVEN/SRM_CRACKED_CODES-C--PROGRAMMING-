@@ -152,7 +152,26 @@
 	printf("%d", count);
 	return 0;
      }
- **10). Nth FIBO
+ **10). Nth FIBO**
  
- 
+ 	#include<stdio.h>
+ 	int Fibonacci_Series(int);
+ 	int main()
+	{
+   		int Number, Fibonacci;
+   		scanf("%d", &Number);
+   		Fibonacci = Fibonacci_Series(Number);
+		printf("%d", Fibonacci);
+   		 return 0;
+	}
+ 	int Fibonacci_Series(int Number)
+	{
+   		if ( Number == 0 )
+    			return 0;
+   		else if ( Number == 1 )
+    			return 1;
+   		else
+    			return ( Fibonacci_Series(Number - 1) + Fibonacci_Series(Number - 2) );
+	}
+
 **TO BE CONTINUED .. . .**
