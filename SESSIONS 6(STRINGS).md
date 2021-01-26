@@ -298,8 +298,8 @@
 
     #include <stdio.h>
     #include<string.h>
-    int main() {
-    	//code
+    int main()
+    {
     	int n,i,j,k,l,m,l1,l2,f;
     	char str1[10000],str2[100000];
     	scanf("%d",&n);
@@ -309,59 +309,69 @@
     	    scanf("%s",str2);
     	    l1=strlen(str1);
     	    l2=strlen(str2);
-    	    for(i=0;i<l1;i++){
+    	    for(i=0;i<l1;i++)
+            {
     	        f=0;
-    	        for(j=0;j<l2;j++){
-    	            if(str1[i]==str2[j]){
+    	        for(j=0;j<l2;j++)
+                {
+    	            if(str1[i]==str2[j])
+                    {
     	                f=1;
     	            }
     	        }
-    	        if(f==0){
+    	        if(f==0)
+                {
     	            printf("%c",str1[i]);
     	        }
     	    }
-    	    printf("\n");
-    	    
-    	}
-    	return 0;
-    }
+    	 printf("\n");
+    	 return 0;
+        }   
 
  **7).YOUTUBER SUM**
-           #include <stdio.h>
-#include <string.h>
+          
+        #include <stdio.h>
+        #include <string.h>
 
-int isPali(char str[], char remain[], int spot){
-    if (strlen(remain) == spot){
-        int len = strlen(str);
-        int i, pali = 1;
-        for (i=0; i < len; i++){
-            if (str[i] != str[len-1-i]){
-                pali = 0;
-                break;
+        int isPali(char str[], char remain[], int spot)
+        {
+            if (strlen(remain) == spot)
+            {
+                 int len = strlen(str);
+                 int i, pali = 1;
+                 for (i=0; i < len; i++)
+                 {
+                    if (str[i] != str[len-1-i])
+                    {
+                        pali = 0;
+                        break;
+                     }
+                 }
+                 if (pali == 1 && len > 0)
+                 {
+                    return 1;
+                 }
+                 else 
+                 {
+                    return 0;
+                 }
+            } 
+            else 
+            {
+                char var = remain[spot];
+                char str2[50];
+                strcpy(str2, str);
+                strncat(str2, &var, 1);
+                return isPali(str2, remain, spot+1) + isPali(str, remain, spot+1);
             }
         }
-        if (pali == 1 && len > 0){
-            return 1;
-        } else {
+        int main()
+        {
+            char remain[50];
+            scanf("%s",remain);
+            char str[50] = "";
+            int sum = isPali(str, remain, 0);
+            printf("%d", sum);
             return 0;
         }
-    } else {
-        char var = remain[spot];
-        char str2[50];
-        strcpy(str2, str);
-        strncat(str2, &var, 1);
-        return isPali(str2, remain, spot+1) + isPali(str, remain, spot+1);
-    }
-}
-
-
-
-int main()
-{
-    char remain[50];
-    scanf("%s",remain);
-    char str[50] = "";
-    int sum = isPali(str, remain, 0);
-    printf("%d", sum);
-    return 0;
-}
+ TO BE CONTINUED......
