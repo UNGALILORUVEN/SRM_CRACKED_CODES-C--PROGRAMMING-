@@ -15,7 +15,7 @@ OUTPUT FOR ABOVE PROGRAM:
 		output 1:the num 2,3,5
 		the sum of these three num is:10
 
-**program 2**
+**PROGRAM 2**
 
 	#include<stdio.h>
 	int main()
@@ -118,6 +118,7 @@ OUTPUT FOR ABOVE PROGRAM:
    	 return 0;
 	 } 
 //NOTE: (PRE) MEANS CHANGE FROM THE NEXT STEP WHEATHER INCREASE OR DECREASE NOT FROM THAT STEP
+
 **PROGRAM GDB LINK FOR ABOVE PROGRAM** 
 	
 	https://onlinegdb.com/hWiuNQRAh
@@ -140,6 +141,7 @@ OUTPUT FOR ABOVE PROGRAM:
 		}
 
 //NOTE : (POST) MEANS CHANGE FROM THE NEXT STEP WHEATHER INCREASE OR DECREASE NOT FROM THAT STEP
+
 **PROGRAM GDB LINK FOR ABOVE PROGRAM** 
 	
 	https://onlinegdb.com/dLXB8kmEq
