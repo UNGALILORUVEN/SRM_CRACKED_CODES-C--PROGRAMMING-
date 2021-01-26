@@ -1,4 +1,4 @@
-**PROGRAM 1**
+**SUM OF THREE NUMBERS (PROGRAM 1)**
 
 	#include<stdio.h>
 	int main()
@@ -15,7 +15,7 @@ OUTPUT FOR ABOVE PROGRAM:
 		output 1:the num 2,3,5
 		the sum of these three num is:10
 
-**PROGRAM 2**
+**SUM AND DIFF. OF TWO NUMBERS(PROGRAM 2)**
 
 	#include<stdio.h>
 	int main()
@@ -34,7 +34,7 @@ OUTPUT FOR ABOVE PROGRAM:
 		the diff of these 3,2 is:1 
 	output:
 		the num 2,3,5the sum of these three num is:10
-**PROGRAM 3**
+**PROGRAMMING STRING(PROGRAM 3)**
 
 	#include <stdio.h>
 	int main()
@@ -62,7 +62,7 @@ OUTPUT FOR ABOVE PROGRAM:
    	printf("Line 4 - Value of c is %d\n", c );
  	return 0;
  	}
-**PROGRAM 5**
+**TOTAL AND AVERAGE OF 6 SUBJECTS(PROGRAM 5)**
 
 	#include <stdio.h>
 	int main()
