@@ -79,6 +79,42 @@
                         printf("%d %d", *num1, *num2);
                         return;
                 }
-                
-
+  **5). Amelia's Game
+  
+                #include <stdio.h>
+                int main()
+                {
+                        int lines;
+                        scanf("%d", &lines);
+                        if (lines < 0 || lines > 10000)
+                        {
+                                printf("INVALID INPUT");
+                                return 0;
+                        }
+                        else 
+                        {
+                                 while (lines != 0){
+                                 int num;
+                                 scanf("%d", &num);
+                                 if (num < 0 || num > 100)
+                                 {
+                                        printf("INVALID INPUT");
+                                        return 0;
+                                 }
+                                 int i, arr[num];
+                                 int *ptr = &arr[0];
+                                 for (i=0; i < num; i++)
+                                 {
+                                        scanf("%d", ptr);
+                                        if (*ptr % 3 == 0)
+                                        {
+                                                printf("%d\n", *ptr);
+                                        }
+                                 }
+                                 lines--;
+                         }
+                       }
+                        return 0;
+                     }
+     
 **HELLO EVERYONE THERE IS LESS QUESTIONS IN SESSION 9 PLZZ DONATE SOME CODE**
