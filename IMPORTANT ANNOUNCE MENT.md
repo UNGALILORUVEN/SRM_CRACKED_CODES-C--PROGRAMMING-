@@ -32,8 +32,8 @@ ________________________________________________________________________________
 
 
 
+![git hub pss](https://user-images.githubusercontent.com/70067609/105855342-fe2aef00-600d-11eb-8994-77bb391f1b11.jpg)
 
-![WhatsApp Image 2021-01-23 at 12 48 40 PM](https://user-images.githubusercontent.com/70067609/105764440-f4a57680-5f7c-11eb-9226-82f88e270b30.jpeg)
 
 
  https://chrome.google.com/webstore/detail/dont-fuck-with-paste/nkgllhigpcljnhoakjkgaieabnkmgdkb?hl=en
