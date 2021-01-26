@@ -570,7 +570,7 @@
         }
         return 0;
     }
- **22). Three idiots
+ **22). Three idiots**
  
         #include <stdio.h>
         int main() 
@@ -582,7 +582,7 @@
             printf("Binoys house is located at(%.1f,%.1f)",e,f);
             return 0;
         }
-  **23). Finding OR of Two numbers
+  **23). Finding OR of Two numbers**
   
         #include <stdio.h>
         int main() 
@@ -598,5 +598,27 @@
         printf("%d",a|b);
         return 0;
         }
+  **24). Quality Checker**
+  
+        #include <stdio.h>
+        int main()
+        {
+            char c;
+            scanf("%c"  ,&c);{
+      
+            if ((c>= 'a') && (c<= 'z'))
+            {
+                printf ("ALPHABET");
+            }
+            else if((c>='A')&&(c<='Z'))
+            {
+                 printf("ALPHABET");
+            }
+            else
+            {
+                printf("NOT ALPHABET");}
+            }
+            return 0;
+         }
   
 TO  BE CONTINUED.....
