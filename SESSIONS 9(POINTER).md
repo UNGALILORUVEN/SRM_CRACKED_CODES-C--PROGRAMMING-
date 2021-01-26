@@ -13,5 +13,77 @@
         printf("\nAfter adding 10\nvalue of a: %d, b: %d, c: %d", *ptr[0], *ptr[1], *ptr[2]);
         return 0;
         }
+ **2). Reverse the string for every '.'**
+ 
+        #include <stdio.h>
+        #include <string.h>
+        void RevString(char *ptr, int num)
+     {
+         while (num > 0)
+         {
+                printf("%c",*ptr);
+                ptr--;
+                num--;
+        }
+        return;
+        }
+        int main()
+        {
+                int lines;
+                scanf("%d", &lines);
+                while (lines != 0 ){
+                char str[2000];
+                scanf("%s", str);
+                char * token = strtok(str, ".");
+                int len = strlen(token);
+                char *ptr = &token[len-1];
+                RevString(ptr, len);
+                while (token != NULL)
+                {
+                        token = strtok(NULL, ".");
+                        if( token != NULL)
+                        {
+                                printf(".");
+                                len = strlen(token);
+                                char *ptr = &token[len-1];
+                                RevString(ptr, len); 
+                        }
+                }
+                printf("\n");
+                lines -= 1;
+        }
+        return 0;
+      }
+  **3). Change constant value using pointer
+  
+             #include <stdio.h>
+             int main()
+             {
+                const int a = 10;
+                const int *p;
+                p = &a;
+                printf("Before changing -constant value of a:%d\n",a);
+                scanf("%d",p);
+                printf("After changing - value of a:%d\n",a);
+                return 0;
+             }
+ **4). Interchange num
+ 
+                #include <stdio.h>
+                void interchange (int *num1, int *num2)
+                {
+                        int temp;
+                        temp = *num1;
+                        *num1 = *num2;
+                        *num2 = temp;
+                        printf("%d %d", *num1, *num2);
+                        return;
+                }
+                
+
+
+
+
+         
         
 **HELLO EVERYONE THERE IS NO COMMENT IN SESSION 9 PLZZ DONATE SOME CODE**
