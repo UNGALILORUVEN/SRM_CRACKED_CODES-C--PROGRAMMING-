@@ -67,7 +67,7 @@
                 printf("After changing - value of a:%d\n",a);
                 return 0;
              }
- **4). TEACHER**
+ **4). Interchange num**
  
                 #include <stdio.h>
                 void interchange (int *num1, int *num2)
@@ -80,10 +80,46 @@
                         return;
                 }
                 
+**5). Reverse the string for every '.'**
 
-
-
-
-         
-        
-**HELLO EVERYONE THERE IS NO COMMENT IN SESSION 9 PLZZ DONATE SOME CODE**
+         #include <stdio.h>
+        #include <string.h>
+        void RevString(char *ptr, int num)
+        {
+        while (num > 0)
+        {
+                printf("%c",*ptr);
+                ptr--;
+                num--;
+        }
+        return;
+        }
+        int main()
+        {
+                int lines;
+                scanf("%d", &lines);
+                while (lines != 0 )
+                {
+                        char str[2000];
+                        scanf("%s", str);
+                        char * token = strtok(str, ".");
+                        int len = strlen(token);
+                        char *ptr = &token[len-1];
+                        RevString(ptr, len);
+                        while (token != NULL)
+                        {
+                                token = strtok(NULL, ".");
+                                if( token != NULL)
+                                {
+                                        printf(".");
+                                        len = strlen(token);
+                                        char *ptr = &token[len-1];
+                                        RevString(ptr, len); 
+                                }
+                        }
+                        printf("\n");
+                        lines -= 1;
+                }
+                return 0;
+          }
+**HELLO EVERYONE THERE IS LESS QUESTIONS IN SESSION 9 PLZZ DONATE SOME CODE**
