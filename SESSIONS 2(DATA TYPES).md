@@ -499,4 +499,19 @@
        printf("%d", (ctr*ctr));
        return 0;
      }
+ **27). Hero's Formula/ Heroine's Formula**
+ 
+    #include <math.h>
+    #include <stdio.h>
+    int main()
+    {
+      int a, b, c;
+      scanf("%d %d %d", &a, &b, &c);
+      float s = (a+b+c)/2.0;
+      float area = sqrt(s*(s-a)*(s-b)*(s-c));
+      printf("%.2f", area);
+      return 0;
+    }
+    
+
  TO BE CONTINUED....
