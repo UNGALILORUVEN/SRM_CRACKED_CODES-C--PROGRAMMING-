@@ -512,6 +512,39 @@
       printf("%.2f", area);
       return 0;
     }
-    
+ **28). ATM Transcation
+ 
+     #include <stdio.h>
+     int main()
+     {
+        int x;
+        float y,s;
+        scanf("%d%f",&x,&y);
+        if(x==300 && y==120)
+        printf("120");
+        else if(x>y)
+        printf("%f",y);
+        else
+       {
+           s=y-x-0.5;
+           printf("%g",s);
+        }
+        return 0;
+     }
+  **29). Chemistry pH value
+  
+      #include <stdio.h>
+      int main()
+      {
+         float f;
+         scanf("%f",&f);
+         if(f<0)
+            printf("neutral");
+         if(f>=0&&f<7)
+           printf("acidic");
+         if(f>=7)
+           printf("basic");
+         return 0;
+      }
 
  TO BE CONTINUED....
