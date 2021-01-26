@@ -1,78 +1,13 @@
 #include<stdio.h>
- 
 int main()
-{
-  	int a, b, c;
-  
-  	printf("\n Please Enter two angles of a triangle \n");
-  	scanf("%d%d",&a,&b);
-   
-  	c= 180 - (a + b);
-   
-  	printf("\n Third Angle of a Triangle = %.2d\n", c);
- 
-  	return 0;
-}
-
-
-
-
-
-https://onlinegdb.com/rJnztlYsw
-
-//to find the cube of number 
-#include <stdio.h>
-
-int main()
-{
-    int a,b;
-    scanf("%d",&a);
-    b=a*a*a;
-    printf("CUBE is: %d",b);
-   return 0;
-}
-
-
-https://onlinegdb.com/ryQr1-Kow
-//power elab
-
-printf("Difference between %dand %dis = %d",a,b,c);
-
-
-#include <math.h>
-#include <stdio.h>
-int main()
-{
-    int a,b,c;
-    scanf("%d%d",&a,&b);
-    c=pow(a,b);
-    printf("%d",a);
-    printf(" to the power of ");
-    printf("%d",b);
-    printf(" is= %d",c);
-    return 0;
-}
-
-
-
-theater square
-
-#include <stdio.h>
-#include <math.h>
- 
-int main() {
-    float m, n, o;
-    int p, q, r;
-    scanf("%f %f %f", &m, &n, &o);
-    p = ceil(m / o);
-    q = ceil(n / o);
-    r = p*q;
-    printf("%d", r);
-    return (0);
-}
-
-2.56 =70.240616
-3.1=124.724983
+	{
+  		int a, b, c;
+  		printf("\n Please Enter two angles of a triangle \n");
+  		scanf("%d%d",&a,&b);
+   		c= 180 - (a + b);
+   		printf("\n Third Angle of a Triangle = %.2d\n", c);
+  		return 0;
+	}	
 
 //volume of sphere 1
 int main()
@@ -83,9 +18,7 @@ int main()
 	printf("%f",v);
 	return 0;
 }
-70.304527 
 
-//2.
 #include<stdio.h>
 int main()
 {
@@ -95,8 +28,6 @@ int main()
 	printf("%f",v);
 	return 0;
 }
- 70.240608
-
 //3.
 #include<stdio.h>
 int main()
@@ -122,9 +53,6 @@ int main()
 	printf("%f",v);
 	return 0;
 }
-
-70.304527 
-
 //5.
 
 V = 4/3 * pi * r^3
@@ -141,9 +69,6 @@ int main()
      printf("\nVolume of Sphere = %f",volume_sphere);
      return 0;
 }
-
-33.493332 
-
 //7.
 #include<stdio.h>
 int main()
@@ -153,9 +78,7 @@ int main()
    v= 4*pi*r*r ;
 	printf("%f",v);
 	return 0;
-}82.313210
-
-
+}
 //8.
 
 #include<stdio.h>
@@ -167,8 +90,6 @@ int main()
 	printf("%lf",v);
 	return 0;
 }
-
-
 //9.
 
 
@@ -181,8 +102,6 @@ int main()
 	printf("%u",v);
 	return 0;
 }
-33
-
 //10.
 #include<stdio.h>
 int main()
@@ -193,9 +112,6 @@ int main()
 	printf("%ld",v);
 	return 0;
 }
-
-33
-
 //11.
 
 #include<stdio.h>
@@ -207,9 +123,6 @@ int main()
 	printf("%lu",v);
 	return 0;
 }
-
-33
-
 //12.
 
 
@@ -222,10 +135,6 @@ int main()
 	printf("%Lf",v);
 	return 0;
 }
-
-
-70.304524      
-
 //13.
 #include<stdio.h>
 int main()
@@ -236,9 +145,6 @@ int main()
 	printf("%hu",v);
 	return 0;
 }
-
-33
-
 //14.
 #include<stdio.h>
 int main()
@@ -249,13 +155,6 @@ int main()
 	printf("%lld",v);
 	return 0;
 }
-
-
-
-
-armstrong number
-https://onlinegdb.com/Sy5tvy0jP
-
 #include<stdio.h>  
  int main()    
 {    
@@ -343,10 +242,6 @@ printf("\nNot Armstrong");
 break ;}
 return 0;  
 } 
-
-
-
-
 
 half pyramid
 
@@ -459,8 +354,6 @@ int main()
 
 smallest vale in an verical orderby adding
 
-
-
 #include <stdio.h>
 #include<stdlib.h>
 int compare(const void *a,const void *b);
@@ -491,10 +384,8 @@ int compare(const void *a,const void *b)
  
 
 
-ADDITION OF TWO NUMBERS
-Harinis home work for the second day is to subtract two numbers, help Harini to solve the proble
+ADDITION OF TWO NUMBERS:
 
-CODING ARENA
 #include <stdio.h>
 int main()
 {
@@ -507,54 +398,7 @@ int main()
  return 0;
 }
 
-
-INDIA VS ENGLAND
-Problem Description
-
-Virat Kohli has won the toss against England in a 50 Over World Cup Final 2019. During the Toss time the commentator have him a funny task to test his mathematical skills. 
-
-Shastri was the umpire to judge his mathematical skills. When the number is 23 he needs tell "INDIA" and when the number is 50 he needs to tell "ENGLAND".
-
-When the number is less than "0" he needs to tells as "Sorry". Help our cricket captain by writing a sample program.
-
-Refer sample Input and Output:
-Input 1: 204 Output: ENGLAND
-Input 2: 219 Output: INDIA 
-Input 3: 2228 Output: ENGLAND
-Input 4: -1 Output: Sorry
-CODING ARENA
-#include <stdio.h>
-int main()
-{
-  int a;
-  scanf("%d",&a);
-  if(a>0)
-  {
-    if(a%2==0)
-       printf("ENGLAND");
-    else if(a%2!=0)
-       printf("INDIA");
-  }
-  else 
-    printf("Sorry");
- return 0;
-}
-Test Case 1
-
-Input (stdin)
-2056
-
-Expected Output
-ENGLAND
-
-
-
-
 REMOVE LAST OCCURRENCE
-Problem Description
-
-Write a C program to read any string from user and remove the last occurrence of a given character from the string.
-CODING ARENA
 #include <stdio.h>
 #include<string.h>
 int main()
@@ -582,34 +426,11 @@ int main()
     }
   }
   printf("%s",str);
-  
-  
-  
-
  return 0;
 }
 
-Test Case 1
+ARRAY INVERSION:
 
-Input (stdin)
-a
-
-madam
-
-Expected Output
-madm
-
-
-
-
-ARRAY INVERSION
-Problem Description
-
-Number of an inversion in array is the number of pair(a[i],a[j]) of elements such that i < j and a[i] > a[j]. For an example if we have a list of element 2 3 6 9 1 then number of inversion is 4 and the pairs are (2,1), (3,1), (6,1) and (9,1).
-Input:
-The first line is N, N is the size of array.
-The second line contains N input C[i].
-CODING ARENA::
 #include <stdio.h>
 int arrinv(int ar[], int a)
 {
@@ -638,23 +459,8 @@ int main()
 
  return 0;
 }
-Test Case 1
-
-Input (stdin)
-5
-
-2 3 6 9 1
-
-Expected Output
-4
-
-
 
 APPLE VENDOR
-Problem Description
-
-Helen wants to find the sum of apples in 2 baskets that she is carrying to the market. You need to write a C program to help her find the total number of apples. Use functions in C to write this program.
-CODING ARENA::
 #include <stdio.h>
 int main()
 {
@@ -664,33 +470,7 @@ int main()
 
  return 0;
 }
-Test Case 1
-
-Input (stdin)
-2 3
-
-Expected Output
-5
-
-
-
 FIND NO OF CHARACTERS IN NAME
-Problem Description
-
-Manoj arranged one event to find no of characters in his friends name, your idea is to give your friends name, for that
-manoj has to answer the no of characters present in it, with the help of sturcuture concept accomplish it.
-
-Input Method
-
-Name of different friends 
-
-Output Method
-
-No of characters
-
-Use Structure Concepts
-
-CODING ARENA
 #include <stdio.h>
 #include<string.h>
 struct slen
@@ -705,48 +485,7 @@ int main()
   printf("%d\n",s.ln); 
   return 0;
 }
-Test Case 1
-
-Input (stdin)
-raja
-
-Expected Output
-4
-
-
-
-ASCII NAME
-Problem Description
-
-Write a program which reads your name from the keyboard and output a list of ANCII codes, which represent your name
-CODING ARENA
-#include <stdio.h>
-int main(void)
-{
-  char n[20];
-  int i=0;
-  scanf("%s",n);
-  while(n[i]!='\0')
-  {
-    printf(" %d",n[i]); i++;
-  }
-  return (0);
-}
-Test Case 1
-
-Input (stdin)
-SRMUNIVERSITY
-
-Expected Output
-83 82 77 85 78 73 86 69 82 83 73 84 89 
-
-
-
 PRINT THE GIVEN STRING
-Problem Description
-
-Print a string using Pointer
-CODING ARENA::
 #include <stdio.h>
 int main()
 {
@@ -759,28 +498,7 @@ int main()
 
  return 0;
 }
-Test Case 1
-
-Input (stdin)
-Cse
-
-Expected Output
-Cse
-
-
 SUM OF EVEN AND ODD NUMBERS
-Problem Description
-
-Write a program to find the sum of even and odd numbers in an array.
-
-Input Format:
-
-Input consists of n+1 integers. The first integer corresponds to n , the size of the array. The next n integers correspond to the elements in the array. Assume that the maximum value of n is 15.
-
-Output Format:
-
-Refer sample output for details.
-CODING ARENA
 #include <stdio.h>
 int main()
 {
@@ -802,35 +520,10 @@ int main()
   printf("\nodd=%d",odd);
 
  return 0;
-}
-Test Case 1
+ }
+ 
+ODD TRIANGLE:
 
-Input (stdin)
-5
-
-2 3 6 8 3
-
-Expected Output
-even=16
-
-odd=6
-Test Case 2
-
-
-
-ODD TRIANGLE
-Problem Description
-
-"Given the triangle of consecutive odd numbers:
-
-1
-3 5
-7 9 11
-13 15 17 19
-21 23 25 27 29
-...
-Calculate the row sums of this triangle from the nth row index (starting at row index 1)."
-CODING ARENA::
 #include <stdio.h>
 int main()
 {
@@ -849,21 +542,8 @@ int main()
 
  return 0;
 }
-Test Case 1
+SUM OF FIRST AND LAST:
 
-Input (stdin)
-1
-
-Expected Output
-1
-
-
-
-SUM OF FIRST AND LAST
-Problem Description
-
-If Give an integer N . Write a program to obtain the sum of the first and last digit of this number. The first line contains an integer T, total number of test cases. Then follow T lines, each line contains an integer N. Display the sum of first and last digit of N.
-CODING ARENA::
 #include <stdio.h>
 int main()
 {
@@ -875,38 +555,7 @@ int main()
 printf("%d",l+n);
  return 0;
 }
-Test Case 1
-
-Input (stdin)
-1
-
-1234
-
-Expected Output
-5
-
-
 SQUARE SUM
-Problem Description
-
-"Everyone knows what a square looks like. Mathematically, a square is a regular quadrilateral. This means that it has four equal sides and four equal angles (90 degree angles).
-
-One beautiful day, Johnny eagerly examined the interesting properties of squares. He did not forget you, his best friend and a talented programmer and thus made a problem about squares to challenge your programming ability. The problem is: given a set of N points in the plane, how many squares are there such that all their corners belong to this set?
-
-Now let's show Johnny your skill!
-Input
-
-The first line contains t, the number of test cases (about 10). Then t test cases follow.
-
-Each test case has the following form:
-
-The first line contains an integer N, the number of points in the given set (4 <= N <= 500).
-Then N lines follow, each line contains two integers X, Y describing coordinates of a point (-50,= X, Y <= 50).
-
-Output
-
-For each test case, print in a single line the number of squares that have vertices belong to the given set."
-CODING ARENA::
    #include <stdio.h>
         #define  z  (d3>=0)&&(d3<=100)&&(a3>=0)&&(a3<=100)&&(point[d3][a3]==1)&&(d4>=0)&&(d4<=100)&&(a4>=0)&&(a4<=100)&&(point[d4][a4]==1)
          
@@ -951,12 +600,8 @@ CODING ARENA::
  
 
 
-ARRAY PROCESSING
-Problem Description
+ARRAY PROCESSING:
 
-Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers.
-If the input array is empty or null, return an empty array:
-CODING ARENA::
 #include <stdio.h>
 int main()
 {
@@ -980,34 +625,8 @@ int main()
 
  return 0;
 }
-Test Case 1
+MAGIC SQUARE:
 
-Input (stdin)
-15
-
-1 2 3 4 5 6 7 8 9 10 -11 -12 -13 -14 -15
-
-Expected Output
-Count of positive numbers=10
-
-Sum of negative numbers=-65
-
-
-
-MAGIC SQUARE
-Problem Description
-
-A magic square is an arrangement of numbers (usually integers) in a square grid, where the numbers in each row, and in each column, and the numbers in the forward and backward main diagonals, all add up to the same number
-
-
-Input Format:
-
-The input consists of (n*n+1) integers. The first integer corresponds to the number of rows/columns in the matrix. The remaining integers correspond to the elements in the matrix. The elements are read in rowwise order, first row first, then second row and so on. Assume that the maximum value of m and n is 5.
-
-
-Output Format:
-Print yes if it is a magic square. Print no if it is not a magic square
-CODING ARENA::
 #include<stdio.h>
  
 int main() {
@@ -1021,9 +640,6 @@ int main() {
       for (column = 0; column < size; column++)
          scanf("%d", &matrix[row][column]);
    }
- 
- 
-   //For diagonal elements
    sum = 0;
    for (row = 0; row < size; row++) {
       for (column = 0; column < size; column++) {
@@ -1067,34 +683,8 @@ int main() {
  
    return 0;
 }
-Test Case 1
+SYMMETRIC MATRIX USING FUNCTIONS:
 
-Input (stdin)
-4 9 2
-
-3 5 7
-
-8 1 6
-
-Expected Output
-Yes
-
-
-
-
-SYMMETRIC MATRIX USING FUNCTIONS
-Problem Description
-
-Create a function called symmetric() and perform the following
-
-A symmetric matrix is a square matrix that is equal to its transpose.
-
-Write a C program to find whether a given matrix is a square matrix or not.
-Input Format:
-
-The input consists of (m*n+2) integers. The first integer corresponds to m, the number of rows in the matrix and the second integer corresponds to n, the number of columns in the matrix. The remaining integers correspond to the elements in the matrix. The elements are read in rowwise order, first row first, then second row and so on. Assume that the maximum value of m and n is 10
-
-CODING ARENA::
 #include<stdio.h>
  
 int main()
@@ -1134,19 +724,8 @@ int main()
  
   return 0;
 }
+GCD AND LCM:
 
-
-
-
-GCD AND LCM
-Problem Description
-
-Two integers A and B are the inputs. Write a program to find GCD and LCM of A and B.
-
-Input: each line contains an integer A and B.
-
-Output: Display the GCD and LCM of A and B separated by space respectively
-CODING ARENA
 #include <stdio.h>
 int main()
 {
@@ -1167,48 +746,7 @@ int main()
   printf("LCM=%d\n",LCM);
   return 0;
 }
-  
-Test Case 1
 
-Input (stdin)
-30 40
-
-Expected Output
-GCD=10
-
-LCM=120
-
-
-
-TWOS MOD
-Problem Description
-
-Bheem has two numbers, he wants to know the modulous value of those two numbers.
-Your task is to write a c Program to calculate the modulus of two given numbers.Input the negative numbers and view the output for different test cases
-CODING ARENA
-#include <stdio.h>
-int main()
-{
-  int a,b,c;
-  scanf("%d%d",&a,&b);
-  c=a%b;
-  printf("%d",c);
-  return 0;
-}
-Test Case 1
-
-Input (stdin)
-100 93
-
-Expected Output
-7
-
-
-LENGTH OF THE STRING
-Problem Description
-
-Program which will accept string from the user and find the length of the string
-CODING ARENA
 #include <stdio.h>
 #include<string.h>
 int main()
@@ -1220,34 +758,8 @@ int main()
   printf("%d",n);
   return 0;
 }
-Test Case 1
+LEAP YEAR:
 
-Input (stdin)
-welcome
-
-Expected Output
-7
-
-
-
-
-
-LEAP YEAR
-
-Problem Description
-
-Raghuraman is the worrisome as well as caring father of his only daughter bharani ,together they live a calm and content life. Over the years as Bharani grows up , Raghuramam got more and more attached to his daughter bharani. As bijarani is very intelligent and bright in her studies. She got a good placement offer in canada. Raghuraman was shocked.Although the thought of being separated from his dead daughter is heartbreaking. Raghuraman wearily accepts. Bharani promises her that she will come home once every leap year. Raghuraman was waiting for his daughter arrival. He doesnt know which is leap year. So write a C program to help Raghumaran to find a whether the year is a leap year.
-
-Input format:
-
-Input consists of single integer which corresponds to a year
-
-Output format :
-
-Displays whether the given year is a leap year or not.
-
-Refer sample input and output for further formatting specifications.
-CODING ARENA
 #include <stdio.h>
 int main()
 {
@@ -1261,22 +773,7 @@ int main()
     printf("Not a Leap year");
   return 0;
 }
-Test Case 1
 
-Input (stdin)
-2004
-
-Expected Output
-Leap Year
-
-
-
-
-PATTERN 6
-Problem Description
-
-Write a program to generate a following numbers structure
-CODING ARENA
 #include <stdio.h>
 int main()
 {
@@ -1291,36 +788,8 @@ int main()
   }
   return 0;
 }
-Test Case 1
 
-Input (stdin)
-5
-
-Expected Output
-12345
-
-12345
-
-12345
-
-12345
-
-12345
-
-
-
-
-
-
-
-ARRAY TRANSFORMATION
-
-Problem Description
-
-"Given n numbers, you can perform the following operation any number of times : Choose any subset of the numbers (possibly empty), none of which are 0. Decrement the numbers in the subset by 1, and increment the numbers not in the subset by K.
-
-Is it possible to perform operations such that exactly n - 1 numbers become 0 ?
-CODING ARENA
+ARRAY TRANSFORMATION:
 #include <stdio.h>
 int main()
 {
@@ -1345,40 +814,8 @@ int main()
   }
   return 0;
 }
+ASCCENDING STRING:
 
- 
-Test Case 1
-
-Input (stdin)
-3
-
-2 1
-
-10 10
-
-3 2
-
-1 2 2
-
-3 2
-
-1 2 3
-
-Expected Output
-YES
-
-YES
-
-NO
-
-
-
-
-ASCCENDING STRING
-Problem Description
-
-Code for Sort given string in ascending order
-CODING ARENA
 #include <stdio.h>
 #include<string.h>
 int main()
@@ -1402,46 +839,9 @@ int main()
 
  return 0;
 }
-Test Case 1
 
-Input (stdin)
-sample
+SQUARE MATRIX:
 
-Expected Output
-aelmps
-
-
-
-
-SQUARE MATRIX
-
-Problem Description
-
-Given a square matrix of size NN, calculate the absolute difference between the sums of its diagonals. 
-
-Input
-The first line contains a single integer N. The next N lines denote the matrix's rows, with each line containing N space-separated integers describing the columns.
-
-Output
-Print the absolute difference between the two sums of the matrix's diagonals as a single integer.
-
-Constraints
-1<=N<=10
-
-Explanation
-The primary diagonal is: 
-11
-5
--12
-Sum across the primary diagonal: 11 + 5 - 12 = 4
-The secondary diagonal is:
-4
-5
-10
-
-Sum across the secondary diagonal: 4 + 5 + 10 = 19 
-Difference: |4 - 19| = 15
-CODING ARENA
 #include <stdio.h>
 #include<math.h>
 #include<stdlib.h>
@@ -1477,33 +877,9 @@ int main()
   printf("%d",difference);
   return 0;
 }
-Test Case 1
 
-Input (stdin)
-3
+CALCULATING PERCENTAGE:
 
-11 2 4
-
-4 5 6
-
-10 8 -12
-
-Expected Output
-15
-
-
-
-
-
-CALCULATING PERCENTAGE
-Problem Description
-
-SRM University buys an old scooter for Rs. A and Spends Rs. B on its repairs. if he sells the scooter for Rs.C , what is his gain %? Write C program to compute the gain %?
-
-Input format:
-
-The first input is an integer which corresponds to A . The second input is an integer which corresponds to B. The third input is a float which corresponds to gain $
-CODING ARENA
 #include <stdio.h>
 int main()
 {
@@ -1513,35 +889,8 @@ int main()
 
  return 0;
 }
-Test Case 1
-
-Input (stdin)
-4700
-
-800
-
-5800
-
-Expected Output
-The gain percentage is=5.45
-
-
 
 COMPUTING X
-Problem Description
-
-The cost prince of n articles is the same as the selling price of X articles . If the profit is p% then what is the value of x?
-
-Input format:
-
-The first input is an integer which corresponds to n the second is an integer which corresponds to p
-
-Output Formt:
-
-Refer sample Input and output for formatting Specifications
-
-The float values are displayed correct to 2 decimal places.
-CODING ARENA
 #include<stdio.h>
 int main()
 {
@@ -1552,42 +901,7 @@ int main()
     
  return 0;
 }
-Test Case 1
-
-Input (stdin)
-12.5
-
-14.5
-
-Expected Output
-10.92
-
-
-
-
-GROSS SALARY
-Problem Description
-
-In a company an emplopyee is paid as under: If his basic salary is less than Rs. 1500, then HRA = 10% of base salary and DA = 90% of basic salary.
-
-If his salary is either equal to or above Rs. 1500, then HRA = Rs. 500 and DA = 98% of basic salary. 
-
-If the Employee's salary is input, write a program to find his gross salary.
-
-NOTE: Gross Salary = Basic Salary+HRA+DA
-
-Input
-
-The first line contains an integer T, total number of testcases. Then follow T lines, each line contains an integer salary.
-
-Output
-
-Output the gross salary of the employee.
-
-Constraints
-1 < T< 1000
-1< salary < 100000
-CODING ARENA
+GROSS SALARY:
 #include<stdio.h>
  
 int main(){
@@ -1604,17 +918,9 @@ int main(){
     }
  
 return 0;
-}TRIANGULAR NUMBERS
-Problem Description
+}
+TRIANGULAR NUMBERS:
 
-"A triangular number is the number of dots in an equilateral triangle uniformly filled with dots. For example, three dots can be arranged in a triangle; thus three is a triangular number. The n-th triangular number is the number of dots in a triangle with n dots on a side. . You can learn more about these numbers from Wikipedia (http://en.wikipedia.org/wiki/Triangular_number).
-Your task is to find out if a given integer is a triangular number.
-Input
-The first line contains the single number n (1<n<500) the given integer.
-Output
-If the given integer is a triangular number output YES, otherwise output NO.
-"
-CODING ARENA
 #include <stdio.h>
 int triangle(int num)
 {
@@ -1639,42 +945,9 @@ int main()
     printf("NO");
   return 0;
 }
- 
-Test Case 1
 
-Input (stdin)
-3
+GCD AND LCM:
 
-1400
-
-2500
-
-3000
-
-Expected Output
-2800
-
-5450
-
-6440
-
-
-
-GCD AND LCM
-Problem Description
-
-Two integers A and B are the inputs. Write a program to find GCD and LCM of A and B.
-Input
-
-The first line contains an integer T, total number of testcases. Then follow T lines, each line contains an integer A and B.
-Output
-
-Display the GCD and LCM of A and B separated by space respectively.
-Constraints
-
-1 <= T<= 1000
-1 <= A,B <= 1000000
-CODING ARENA
 #include <stdio.h>
 int main()
 {
@@ -1706,50 +979,8 @@ int main()
   }
   return 0;
 }
-Test Case 1
 
-Input (stdin)
-5
-
-2 3
-
-2 4
-
-3 5
-
-4 6
-
-7 8
-
-Expected Output
-1 6
-
-2 4
-
-1 15
-
-2 12
-
-1 56
-
-
-
-
-
-GREAT CALCULATOR
-Problem Description
-
-SRM Students decides to create a software to extend our help to Petty shops and Shops. In this regard the "STUDENT" team has selected a few students to complete the task. The task was monitored by a group of experts and the software was tested by a expert team from corporate.
-
-The task is as follows when there are two items and if the shop keeper says 1 then it needs to add the two items. If the shop keeper yells 2 then the two items should be subtracted. And when the shop keeper tells 3 then the product of the items needs to be outputted. When shop keeper tells as 4 then the items should fight with one another.
-
-Only Integer numbers as input
-
-Input 1 = addition
-Input 2 = Substraction
-Input 3 = Multiplication
-Input 4 = Division
-CODING ARENA
+GREAT CALCULATOR:
 #include <stdio.h>
 int main()
 {
@@ -1782,22 +1013,7 @@ int main()
 
  return 0;
 }
-Test Case 1
-
-Input (stdin)
-1
-
-35 36
-
-Expected Output
-71
-
-
 MODULE OF NUMBERS
-Problem Description
-
-Harinis home work for fifth day is to find reminder of two numbers, help Harini to solve the problem.
-CODING ARENA
 #include <stdio.h>
 int main()
 {
@@ -1809,29 +1025,8 @@ int main()
 
  return 0;
 }
-Test Case 1
 
-Input (stdin)
-6
-
-2
-
-Expected Output
-The modulo of two number is:0
-
-
-
-TRIANGULAR NUMBERS
-Problem Description
-
-"A triangular number is the number of dots in an equilateral triangle uniformly filled with dots. For example, three dots can be arranged in a triangle; thus three is a triangular number. The n-th triangular number is the number of dots in a triangle with n dots on a side. . You can learn more about these numbers from Wikipedia (http://en.wikipedia.org/wiki/Triangular_number).
-Your task is to find out if a given integer is a triangular number.
-Input
-The first line contains the single number n (1<n<500) the given integer.
-Output
-If the given integer is a triangular number output YES, otherwise output NO.
-"
-CODING ARENA
+TRIANGULAR NUMBERS:
 #include <stdio.h>
 int triangle(int num)
 {
@@ -1858,24 +1053,7 @@ int main()
 }
 
 
-GROSS SALARY
-Problem Description
-
-" In a company an emplopyee is paid as under: If his basic salary is less than Rs. 1500, then HRA = 10% of base salary and DA = 90% of basic salary.
-If his salary is either equal to or above Rs. 1500, then HRA = Rs. 500 and DA = 98% of basic salary. If the Employee's salary is input, write a program to find his gross salary.
-
-NOTE: Gross Salary = Basic Salary+HRA+DA
-Input
-
-The first line contains an integer T, total number of testcases. Then follow T lines, each line contains an integer salary.
-Output
-
-Output the gross salary of the employee.
-Constraints
-
-1 <= T <= 1000
-1 <= salary <= 100000
-CODING ARENA::
+GROSS SALARY:
 #include <stdio.h>
 int main()
 {
@@ -1902,46 +1080,6 @@ int main()
 
  return 0;
 }
-Test Case 1
-
-Input (stdin)
-3
-
-1203
-
-10042
-
-1312
-
-Expected Output
-2406.00
-
-20383.16
-
-2624.00
-
-
-
-
-Problem Description
-
-1. Create a Structure called "employee"
-
-2. Create three data members as name(char), empid(int), salary(float)
-
-3. Input the value of employee's (name, empid and salary)
-
-4. Create Structure Variable as "emp"
-
-5. Display using structure variable.datamember
-
-Hint:
-emp.name
-
-Note: The structure variables, data members and structure name are CASE Sensitive.
-
-Follow the same case mentioned in the mandatory
-CODING ARENA
 #include <stdio.h>
  
 
@@ -1966,46 +1104,6 @@ int main()
     printf("%.f\n",emp.salary);
     return 0;
 }
-Test Case 1
-
-Input (stdin)
-Bogar
-
-1122
-
-15000
-
-Expected Output
-Bogar
-
-1122
-
-15000
-
-
-
-
-
-Static Structure - Employee
-Problem Description
-
-1. Create a Structure called "employee"
-
-2. Create three data members as name(char), empid(int), salary(float)
-
-3. Input the value of employee's (name, empid and salary)
-
-4. Create Structure Variable as "emp"
-
-5. Display using structure variable.datamember
-
-Hint:
-emp.name
-
-Note: The structure variables, data members and structure name are CASE Sensitive.
-
-Follow the same case mentioned in the mandatory
-CODING ARENA
 #include <stdio.h>
  
 
@@ -2030,48 +1128,8 @@ int main()
     printf("%.f\n",emp.salary);
     return 0;
 }
-Test Case 1
+Array Mode:
 
-Input (stdin)
-Bogar
-
-1122
-
-15000
-
-Expected Output
-Bogar
-
-1122
-
-15000
-
-
-
-
-Array Mode
-Problem Description
-
-Write a program to find the mode of the elements in the array.
-
-The mode in a list of numbers refers to the list of numbers that occur most frequently. It is important to note that there can be more than one mode and if no number occurs more than once in the set, then there is no mode for that set of numbers.
-
-
-
-Input and Output Format:
-
-Input consists of n+1 integers where n corresponds to the number of elements in the array.
-
-The first integer corresponds to n and the next n integers correspond to the elements in the array.
-
-Refer sample input and output for formatting specifications.
-
-Assume that the maximum number of elements in the array is 20.
-
-Assume that in the input dataset there is 1 mode or no mode at all.
-
-All text in bold corresponds to input and the rest corresponds to output.
-CODING ARENA
 #include <stdio.h>
 int main()
 {
@@ -2096,18 +1154,6 @@ int main()
     printf("none");
  return 0;
 }
-Test Case 1
-
-Input (stdin)
-5
-
-2 4 2 3 5
-
-Expected Output
-Mode=2
-
-
-
 # include <stdio.h> 
 # include <conio.h> 
 void main() 
@@ -2184,29 +1230,6 @@ void main() {
 
 
 arrat mean value
-
-
-
-Array Mean
-Problem Description
-
-Write a program to find the mean of the elements in the array.
-
-
-Input and Output Format:
-
-Input consists of n+1 integers where n corresponds to the number of elements in the array.
-
-The first integer corresponds to n and the next n integers correspond to the elements in the array.
-
-Output consists of a double value which corresponds to the mean of the array. It is printed upto 2 digits of precision.
-
-Assume that the maximum number of elements in the array is 20.
-
-Refer sample input and output for formatting specifications.
-
-All text in bold corresponds to input and the rest corresponds to output.
-CODING ARENA
   #include<stdio.h>
 int main(){
   int n, a[20], i;
@@ -2221,45 +1244,8 @@ int main(){
   printf("The mean of the array is %.2f",min/n);
   return 0;
 }
-Case 1
+Array Insertion and sorting:
 
-Input (stdin)
-5
-
-2
-
-4
-
-1
-
-3
-
-5
-
-Expected Output
-The mean of the array is 3.00
-
-
-
-Array Insertion and sorting
-Problem Description
-
-Write a program to insert an element in the array.
-
-
-Example
-
-For example consider an array having three elements in it initially and a[0] = 1, a[1] = 2 and a[2] = 3 and you want to insert a number 45 at location 1 i.e. a[0] = 45, so we have to move elements one step below so after insertion a[1] = 1 , and a[2] = 2 and a[3] = 3.
-
-
-Input and Output Format:
-
-Assume that the maximum number of elements in the array is 20.
-
-Refer sample input and output for formatting specifications.
-
-All text in bold corresponds to input and the rest corresponds to output.
-CODING ARENA
 #include <stdio.h>
  
 int main()
@@ -2304,54 +1290,8 @@ int main()
       printf("%d\n", array[c]);
    return 0;
 }
-Test Case 1
-
-Input (stdin)
-5
-
-9 6 3 2 7
-
-1
-
-10
-
-Expected Output
-Before sorting
-
-9
-
-10
-
-6
-
-3
-
-2
-
-7
-
-After sorting
-
-2
-
-3
-
-6
-
-7
-
-9
-
-10
-
-
-
-
 Count a String
-Problem Description
 
-Write a C program to count total number of alphabets, digits or special characters in a string using loop. How to find total number of alphabets, digits and special characters in a string in C programming.
-CODING ARENA
 #include <stdio.h>
  
 int main()
@@ -2382,26 +1322,8 @@ int main()
   
    return 0;
 }
-Test Case 1
+SWAP 3 NUMBERS IN CYCLIC ORDER:
 
-Input (stdin)
-SRM!University@Learning&Centre@1113
-
-Expected Output
-Alphabets=27
-
-Digits=4
-
-Special characters=4
-
-
-
-
-SWAP 3 NUMBERS IN CYCLIC ORDER
-Problem Description
-
-Ramya, vidhya and Ramesh are always changing their places in cyclic manner. Can you write a code using methods(functions) to read 3 numbers and swap them using a temporary variable in a cyclic manner. Print the results in the specified order.
-CODING ARENA
 #include <stdio.h>
 void cyclicswap(int *a,int *b,int *c);
 int main()
@@ -2420,26 +1342,8 @@ void cyclicswap(int *a,int *b,int *c)
   *a=*c;
   *c=t;
 }
-Test Case 1
+FOR LOOP PROCESSING:
 
-Input (stdin)
-1 2 3
-
-Expected Output
-3
-
-1
-
-2
-Tes
-
-
-
-FOR LOOP PROCESSING
-Problem Description
-
-Program to calculate the sum of first n natural numbers
-CODING ARENA::
 #include <stdio.h>
 int main()
 {
@@ -2453,16 +1357,8 @@ int main()
 
  return 0;
 }
-
-
-
-
-
 RECURSIVE FUNCTIONS
-Problem Description
 
-Write a C program for Sum of Natural Numbers Using Recursion.
-CODING ARENA
 #include <stdio.h>
 int addnum(int n);
 int main()
@@ -2480,17 +1376,8 @@ int addnum(int n)
     return n;
 }
 
-
-
-
-
-
 COUNT THE UPPER AND LOWER CASE
-Problem Description
 
-Count Total number of Capital and Small Letters from Accepted Linen
-Note: (No spaces between words)
-CODING ARENA
 #include <stdio.h>
 int main()
 {
@@ -2509,29 +1396,9 @@ int main()
   printf("\nLowercase Letters:%d",cl);
   return 0;
 }
-Test Case 1
 
-Input (stdin)
-SRMUn
+COUNT THE UPPER AND LOWER CASE:
 
-Expected Output
-Uppercase Letters:4
-
-Lowercase Letters:1
-
-
-
-
-
-
-
-
-
-COUNT THE UPPER AND LOWER CASE
-Problem Description
-
-Count Total number of Capital and Small Letters from Accepted Linen
-Note: (No spaces between words)
 CODING ARENA
 #include <stdio.h>
 int main()
@@ -2551,30 +1418,9 @@ int main()
   printf("\nLowercase Letters:%d",cl);
   return 
 }
-Test Case 1
-
-Input (stdin)
-SRMUn
-
-Expected Output
-Uppercase Letters:4
-
-Lowercase Letters:1
-
-
-
-
-
-
-
 
 ARRSUMAVG
-Problem Description
 
-Calculate Sum & Average of an Array
-
-Assign the maximum size value is 10
-CODING ARENA
 #include <stdio.h>
 int main()
 {
@@ -2601,41 +1447,9 @@ int main()
 
  return 0;
 }
-Test Case 1
 
-Input (stdin)
-6
+BITWISE OPERATOR:
 
--8 9 -100 0 6 5
-
-Expected Output
-Sum=-108
-
-Sum=20
-
-Average=-14.67
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-BITWISE OPERATOR
-Problem Description
-
-Kernel had an idea to use bitwise operator. He tries to do some multiplication operation. So he select a nu mber that should be multiplied by 4. His task is to write a c program to multiply given number by 4 using bitwise operators
-CODING ARENA
 #include <stdio.h>
 int main()
 {
@@ -2647,26 +1461,6 @@ int main()
 
  return 0;
 }
-Test Case 1
-
-Input (stdin)
-1
-
-Expected Output
-1*4=4
-
-
-
-
-
-
-
-
-Count Vowels
-Problem Description
-
-Program to count vowels, consonants,digits and whitespaces
-CODING ARENA
 #include <stdio.h>
 
 int main()
@@ -3313,7 +2107,6 @@ int main() {
             printf("Tamil=%d\nEnglish=%d\nMaths=%d\nScience=%d\nSocial Science=%d",&s1.tamil,&s1.english,&s1.maths,&s1.science,&s1.ss);
             return 0;
 }
-
 
 #include <stdio.h>
 union Student
