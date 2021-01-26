@@ -173,7 +173,7 @@
    		else
     			return ( Fibonacci_Series(Number - 1) + Fibonacci_Series(Number - 2) );
 	}
-**19). Greddy Puppy
+**19). Greddy Puppy**
 
 	#include <stdio.h>
 	int main() 
@@ -196,7 +196,7 @@
  	}
 	return 0;
 	}
-**20). Finding Bitwase EXOR of Two Numbers
+**20). Finding Bitwase EXOR of Two Numbers**
 
 	#include <stdio.h>
 	int main()
@@ -212,7 +212,7 @@
  	printf("%d" ,a^b);
  	return 0;
 	}
-**21). Case of Zeros and Ones
+**21). Case of Zeros and Ones**
 
 	#include<stdio.h>
 	#include<stdlib.h>
@@ -230,7 +230,7 @@
     		printf("%d",abs(c1-c0));
  		return 0;
 	}
-**22). Shape Up
+**22). Shape Up**
 
 
 	#include<stdio.h>
