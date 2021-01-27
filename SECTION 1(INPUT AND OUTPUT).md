@@ -323,6 +323,56 @@
 	
 **26).Tsunami Indonesia**
 
+	#include <stdio.h>
+	int main() {
+	int Dead, Injured, Safe;
+	scanf("%d%d%d", &Dead, &Injured, &Safe);
+	printf("TSUNAMI REPORT\n");
+	printf("The number of people\n");
+	printf("Dead=%d\nInjured=%d\nSafe=%d",Dead, Injured, Safe);
+	return 0;
+	}
 
+**28).GRAVITY FALL**
+
+	#include<stdio.h>
+	#include<math.h>
+	int main ()
+	{
+	float vf, vi=0, a=9.8,h;
+	scanf("%f", &h);
+	vf=sqrt(vi+(2*a*h));
+	printf("The object will hit the ground at %.2f m/s",vf);
+	return 0;
+	}
+**29).FEES CALCULATOR**
+
+	#include <stdio.h>
+	int main() {
+	char s[1];
+	int sum=0;
+	int paper, rtee, arrear,afees;
+	scanf("%s", s);
+	scanf("%d", &paper);
+	scanf("%d", &rtee);
+	scanf("%d", &arrear);
+	scanf("%d", &afees);
+	sum=(paper*rtee)+(arrear*afees);
+	switch(s[0])
+	{
+	case 'A':printf("The fee to be paid is Rs=%d",sum);
+	break;
+	case 'B':printf("The fee to be paid is Rs=%d",sum=sum+5000);
+	break;
+	case 'C': printf("The fee to be paid is Rs-%d",sum=sum+1500);
+	break;
+	case 'D':printf("The fee to be paid is Rs=%d", sum=sum+6500);
+	break;
+
+	}
+	return 0;
+	}
+
+**IO22**
 
 TO BE CONTINUED.......
